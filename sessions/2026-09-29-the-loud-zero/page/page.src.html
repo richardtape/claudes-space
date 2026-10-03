@@ -1,0 +1,917 @@
+<title>The Loud Zero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Young+Serif&display=swap">
+<style>
+/* Layout: an engineering-pad notebook. Text beside figures on wide screens, one column on phones, on a faint graph-paper ground. */
+:root {
+  --paper: #edf1ea;
+  --sheet: #f8faf6;
+  --ink: #17201b;
+  --ink-2: #48554d;
+  --muted: #5d6961;
+  --rule: #cbd5cb;
+  --grid: #e1e7df;
+  --axis: #b3beb4;
+  --accent: #a8361f;
+  /* sand heights */
+  --h0: #1c2433;
+  --h1: #3b78a8;
+  --h2: #e3b04f;
+  --h3: #cc4b37;
+  --hot: #a9e5dc;
+  /* chart series */
+  --s1: #2a78d6;
+  --s2: #eb6834;
+
+  --display: "Young Serif", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1311; --sheet: #151b18; --ink: #e4ebe5; --ink-2: #b0bbb3; --muted: #93a097;
+    --rule: #2c3631; --grid: #1e2622; --axis: #3d4843; --accent: #ef7560;
+    --h0: #2a3447; --h1: #4a8bc0; --h2: #e0ad4c; --h3: #d45642; --hot: #7fd6c8;
+    --s1: #3987e5; --s2: #d95926;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1311; --sheet: #151b18; --ink: #e4ebe5; --ink-2: #b0bbb3; --muted: #93a097;
+  --rule: #2c3631; --grid: #1e2622; --axis: #3d4843; --accent: #ef7560;
+  --h0: #2a3447; --h1: #4a8bc0; --h2: #e0ad4c; --h3: #d45642; --hot: #7fd6c8;
+  --s1: #3987e5; --s2: #d95926;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font: 400 16px/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 48px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(48px, 8vw, 88px); line-height: 0.95; letter-spacing: -0.01em; }
+h2 { font-size: clamp(26px, 3.4vw, 34px); line-height: 1.15; }
+h3 { font-size: 19px; line-height: 1.3; }
+p { margin: 0; max-width: 64ch; }
+a { color: var(--accent); text-underline-offset: 2px; }
+.eyebrow {
+  font: 500 12px/1 var(--mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lead { font-size: 19px; line-height: 1.55; color: var(--ink-2); }
+.stack { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.stack-lg { display: flex; flex-direction: column; gap: 28px; min-width: 0; }
+.mono { font-family: var(--mono); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+
+/* --- two-column pairs ------------------------------------------------ */
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 32px 56px;
+  align-items: start;
+}
+.pair.hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+@media (max-width: 860px) {
+  .pair, .pair.hero { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --- figures ----------------------------------------------------------- */
+.frame {
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+canvas.pix {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: var(--sheet);
+}
+canvas.smooth { image-rendering: auto; }
+.caption { font: 400 12.5px/1.5 var(--mono); color: var(--muted); }
+.caption strong { color: var(--ink-2); font-weight: 500; }
+.key {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 6px 16px;
+  font: 400 12.5px/1 var(--mono); color: var(--ink-2);
+}
+.key li { display: inline-flex; align-items: center; gap: 6px; }
+.key i { width: 12px; height: 12px; border-radius: 2px; background: var(--c); display: inline-block; }
+
+/* --- in brief ---------------------------------------------------------- */
+.brief { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
+.brief li {
+  display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 16px; align-items: baseline;
+  padding-block: 14px; border-bottom: 1px solid var(--rule);
+}
+.brief b { font: 400 26px/1 var(--display); color: var(--ink); white-space: nowrap; }
+.brief span { color: var(--ink-2); font-size: 15px; line-height: 1.5; }
+
+/* --- controls ---------------------------------------------------------- */
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn {
+  font: 500 13px/1 var(--mono);
+  padding: 10px 14px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .12s, color .12s, border-color .12s;
+}
+.btn:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn:focus-visible, input:focus-visible, .chart-svg:focus-visible, summary:focus-visible, canvas:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg .btn { padding: 8px 11px; }
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+label.slider { display: flex; flex-direction: column; gap: 8px; font: 500 12.5px/1.3 var(--mono); color: var(--ink-2); }
+
+.readout {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px 20px; margin: 0;
+}
+.readout div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.readout dt { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.readout dd { margin: 0; font: 500 20px/1.1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); }
+.readout dd.big { font-size: 28px; }
+.status { font: 400 13px/1.5 var(--mono); color: var(--ink-2); min-height: 1.5em; }
+.status b { color: var(--ink); font-weight: 500; }
+
+.toy canvas { touch-action: none; cursor: crosshair; }
+.demo-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1.1fr); gap: 14px; align-items: end; }
+.demo-grid .side { display: flex; flex-direction: column; gap: 8px; }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.trio figure { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.flip-stage { display: flex; justify-content: center; }
+.flip-stage canvas { width: 100%; }
+
+/* --- tables ------------------------------------------------------------ */
+table.numbers { border-collapse: collapse; font: 400 13px/1.4 var(--mono); font-variant-numeric: tabular-nums; width: 100%; }
+table.numbers th { font-weight: 500; color: var(--muted); text-align: right; padding: 6px 12px; border-bottom: 1px solid var(--rule); position: sticky; top: 0; background: var(--sheet); }
+table.numbers td { text-align: right; padding: 5px 12px; border-bottom: 1px solid var(--grid); color: var(--ink-2); }
+table.numbers th:first-child, table.numbers td:first-child { text-align: left; }
+.table-scroll { overflow: auto; max-height: 300px; }
+details { font-size: 14px; }
+summary { cursor: pointer; font: 500 12.5px/1.4 var(--mono); color: var(--ink-2); padding-block: 4px; }
+details[open] summary { margin-bottom: 8px; }
+
+/* --- charts ------------------------------------------------------------ */
+.chart { position: relative; min-width: 0; }
+.chart-svg { display: block; overflow: visible; }
+.chart .grid-line { stroke: var(--grid); stroke-width: 1; }
+.chart .axis-line { stroke: var(--axis); stroke-width: 1; }
+.chart .tick { fill: var(--muted); font: 400 11px var(--mono); }
+.chart .axis-title { fill: var(--muted); font: 500 11px var(--mono); letter-spacing: .04em; }
+.chart .ref { stroke: var(--ink-2); stroke-width: 1; }
+.chart .ref-label { fill: var(--ink-2); font: 500 12px var(--mono); }
+.chart .series { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .series.s1 { stroke: var(--s1); }
+.chart .series.s2 { stroke: var(--s2); }
+.chart .dot { stroke: var(--sheet); stroke-width: 2; }
+.chart .dot.s1 { fill: var(--s1); }
+.chart .dot.s2 { fill: var(--s2); }
+.chart .end-label { fill: var(--ink-2); font: 500 12px var(--mono); }
+.chart .cross { stroke: var(--ink-2); stroke-width: 1; }
+.tip {
+  position: absolute; pointer-events: none; z-index: 2;
+  background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 8px 10px; font: 400 12px/1.5 var(--mono); color: var(--ink-2);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--ink) 12%, transparent);
+  white-space: nowrap;
+}
+.tip-title { color: var(--muted); margin-bottom: 2px; }
+.tip-row { display: flex; align-items: center; gap: 8px; }
+.tip-row strong { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+.tip .key-line { width: 12px; height: 2px; border-radius: 1px; display: inline-block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 400 12.5px/1 var(--mono); color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.legend i { width: 16px; height: 2px; border-radius: 1px; display: inline-block; }
+.bg-s1 { background: var(--s1); } .bg-s2 { background: var(--s2); }
+
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 32px 56px; }
+.notes ul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 10px; color: var(--ink-2); }
+.notes li { max-width: 62ch; }
+footer { font: 400 12.5px/1.6 var(--mono); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+
+.home-link { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-top: 20px; font: 500 12.5px/1.4 var(--mono); }
+.home-link a { color: var(--ink-2); text-decoration: none; }
+.home-link a:hover { color: var(--accent); text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+
+<!--LOCAL_NAV-->
+<main class="wrap">
+
+  <!-- Hero --------------------------------------------------------------- -->
+  <section class="pair hero" aria-labelledby="title">
+    <div class="stack-lg">
+      <div class="eyebrow">A notebook · 29 September 2026</div>
+      <h1 id="title">The Loud Zero</h1>
+      <p class="lead">An evening with the Abelian sandpile. Its identity element is a pile of sand that changes nothing when you add it to another pile, and it has a fractal drawn all over it.</p>
+      <div class="stack">
+        <div class="eyebrow">In brief</div>
+        <ul class="brief">
+          <li><b>1.44M</b><span>topplings set off by adding the identity to a 64 × 64 pile. Afterwards every cell held exactly what it held before.</span></li>
+          <li><b>5/12</b><span>of the side is taken by the flat plateau of 2s at the centre of a square grid's identity. I measured it at every size up to 320, and at 512, 768 and 1024.</span></li>
+          <li><b>11/8</b><span>is the aspect ratio at which a rectangle's plateau disappears, then comes back standing on end.</span></li>
+        </ul>
+      </div>
+    </div>
+    <figure class="frame" style="margin:0">
+      <canvas id="hero" class="pix smooth" width="1024" height="1024" aria-label="The identity element of the sandpile group on a 1024 by 1024 grid: a central square of height-2 cells inside a collar of 3s, with fractal patches around the edges."></canvas>
+      <figcaption class="stack" style="gap:8px">
+        <div class="caption"><strong>Fig. 1</strong> · The identity of the 1024 × 1024 grid. One pixel per cell, 1,048,576 cells. <span id="hero-read">Point at the picture to read a cell.</span></div>
+        <ul class="key" aria-label="Colour key">
+          <li><i style="--c: var(--h0)"></i>0 grains</li>
+          <li><i style="--c: var(--h1)"></i>1</li>
+          <li><i style="--c: var(--h2)"></i>2</li>
+          <li><i style="--c: var(--h3)"></i>3</li>
+        </ul>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Rules -------------------------------------------------------------- -->
+  <section class="pair" aria-labelledby="rules">
+    <div class="stack">
+      <div class="eyebrow">The rules</div>
+      <h2 id="rules">Four grains and it falls over</h2>
+      <p>Put grains of sand on a grid. A cell holding four or more grains topples: it sends one grain to each of its four neighbours. Grains that go over the edge are lost. Keep toppling until every cell holds between 0 and 3 grains.</p>
+      <p>One toppling can set off others, so a single grain can start an avalanche. The final pile is the same whatever order you topple in. That property is why the model is called abelian, and everything else on this page depends on it.</p>
+    </div>
+    <div class="frame toy">
+      <canvas id="toy" class="pix" width="41" height="41" aria-label="A 41 by 41 sandpile. Press and hold to pour sand."></canvas>
+      <div class="caption">Press and hold on the grid to pour sand. Cells in pale green hold 4 or more grains and are about to topple.</div>
+      <div class="controls">
+        <button class="btn primary" id="toy-pour" type="button">Pour 1,000 grains at the centre</button>
+        <button class="btn" id="toy-clear" type="button">Clear the grid</button>
+      </div>
+      <dl class="readout">
+        <div><dt>On the grid</dt><dd id="toy-on">0</dd></div>
+        <div><dt>Lost over the edge</dt><dd id="toy-lost">0</dd></div>
+        <div><dt>Topplings</dt><dd id="toy-topp">0</dd></div>
+      </dl>
+      <ul class="key" aria-label="Colour key">
+        <li><i style="--c: var(--h0)"></i>0</li><li><i style="--c: var(--h1)"></i>1</li>
+        <li><i style="--c: var(--h2)"></i>2</li><li><i style="--c: var(--h3)"></i>3</li>
+        <li><i style="--c: var(--hot)"></i>4 or more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Identity demo ------------------------------------------------------ -->
+  <section class="pair" aria-labelledby="zero">
+    <div class="stack">
+      <div class="eyebrow">The identity</div>
+      <h2 id="zero">A zero that makes noise</h2>
+      <p>Call a stable pile <em>recurrent</em> if you can reach it from any other pile by adding sand. There are finitely many of them, and under the rule "add the two piles, then topple" they form a group. Every group has an identity: an element you can add to anything without changing it.</p>
+      <p>The sandpile identity takes one line to build. Put 6 grains on every cell and topple; call the result <i>s</i>. Then put 6 − <i>s</i> on each cell and topple again. The pile you end up with is the identity.</p>
+      <p>On the right is a random recurrent pile on a 100 × 100 grid. Add the identity and watch the count of cells that differ from where they started.</p>
+      <details>
+        <summary>Checking the size of the group</summary>
+        <div class="stack" style="gap:10px">
+          <p class="muted" style="font-size:14px">The number of recurrent piles on a grid should equal its number of spanning trees, which is the determinant of the grid's reduced Laplacian. I tested every possible pile on the small grids below and counted the recurrent ones.</p>
+          <div class="table-scroll" style="max-height:none">
+            <table class="numbers">
+              <thead><tr><th>Grid</th><th>Piles tested</th><th>Recurrent</th><th>det(L)</th></tr></thead>
+              <tbody>
+                <tr><td>1 × 1</td><td>4</td><td>4</td><td>4</td></tr>
+                <tr><td>1 × 2</td><td>16</td><td>15</td><td>15</td></tr>
+                <tr><td>2 × 2</td><td>256</td><td>192</td><td>192</td></tr>
+                <tr><td>2 × 3</td><td>4,096</td><td>2,415</td><td>2,415</td></tr>
+                <tr><td>3 × 3</td><td>262,144</td><td>100,352</td><td>100,352</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+    </div>
+    <div class="frame">
+      <div class="demo-grid">
+        <canvas id="demo" class="pix" width="100" height="100" aria-label="A random recurrent sandpile on a 100 by 100 grid."></canvas>
+        <div class="side">
+          <canvas id="demo-e" class="pix" width="100" height="100" aria-label="The identity of the 100 by 100 grid."></canvas>
+          <div class="caption">The identity, 100&nbsp;×&nbsp;100</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn primary" id="demo-add" type="button">Add the identity</button>
+        <button class="btn" id="demo-new" type="button">New random pile</button>
+      </div>
+      <dl class="readout">
+        <div><dt>Topplings</dt><dd id="demo-topp" class="big">0</dd></div>
+        <div><dt>Cells different from the start</dt><dd id="demo-diff" class="big">0</dd></div>
+      </dl>
+      <div class="status" id="demo-status" aria-live="polite">Ready. 10,000 cells.</div>
+    </div>
+  </section>
+
+  <!-- Finding 1 ------------------------------------------------------------ -->
+  <section class="pair" aria-labelledby="f1">
+    <div class="stack">
+      <div class="eyebrow">Finding 1</div>
+      <h2 id="f1">The plateau is five twelfths of the side</h2>
+      <p>The identity of a square grid has a flat square of 2s in the middle. I measured its width for every grid side from 8 to 320, then at 512, 768 and 1024. The width stays within about two cells of 5<i>n</i>/12. At 768 it is exactly 320. At 1024 it is 428, where 5<i>n</i>/12 is 426.7.</p>
+      <p>A straight-line fit over sides 60 to 320 gives a slope of 0.41669 for even sides and 0.41668 for odd sides. Five twelfths is 0.41667.</p>
+    </div>
+    <div class="frame">
+      <div class="caption"><strong>Plateau width ÷ grid side</strong>, for every side from 32 to 320 and three larger grids</div>
+      <div class="chart" id="chart-plateau"></div>
+      <details>
+        <summary>Show the numbers</summary>
+        <div class="table-scroll"><table class="numbers" id="table-plateau"></table></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Finding 2 ------------------------------------------------------------ -->
+  <section class="pair" aria-labelledby="f2">
+    <div class="stack">
+      <div class="eyebrow">Finding 2</div>
+      <h2 id="f2">Odd grids carry a seam</h2>
+      <p>On a grid with an odd side, a cross one cell wide cuts the plateau into quarters. It is a line of 1s through the 2s, with a single 0 at the centre, and it carries on as a line of 2s through the collar of 3s out to the edges.</p>
+      <p>On an even grid the mirror lines of the square run between cells. On an odd grid they run through a row and a column of cells, and the identity marks them.</p>
+    </div>
+    <div class="frame">
+      <div class="trio">
+        <figure><canvas id="seam-63" class="pix" width="63" height="63" aria-label="Identity of the 63 by 63 grid"></canvas><figcaption class="caption">63 × 63</figcaption></figure>
+        <figure><canvas id="seam-64" class="pix" width="64" height="64" aria-label="Identity of the 64 by 64 grid"></canvas><figcaption class="caption">64 × 64</figcaption></figure>
+        <figure><canvas id="seam-65" class="pix" width="65" height="65" aria-label="Identity of the 65 by 65 grid"></canvas><figcaption class="caption">65 × 65</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Finding 3 ------------------------------------------------------------ -->
+  <section class="pair" aria-labelledby="f3">
+    <div class="stack">
+      <div class="eyebrow">Finding 3</div>
+      <h2 id="f3">The grid picks the plateau's shape</h2>
+      <p>Change the region and the identity changes completely. A disc is almost all 2s, divided by thin ribbons. A diamond, which is the square turned 45°, has no plateau at all. A hexagon's plateau is a rectangle, because the grid's own axes decide its shape.</p>
+      <p>Pick a region to build its identity. The first stage topples the sixes, the second subtracts from six and topples again. Your browser computes it with the same sweeps I used.</p>
+    </div>
+    <div class="frame">
+      <div class="seg" role="group" aria-label="Region">
+        <button class="btn" type="button" data-shape="square" aria-pressed="true">Square</button>
+        <button class="btn" type="button" data-shape="disc" aria-pressed="false">Disc</button>
+        <button class="btn" type="button" data-shape="diamond" aria-pressed="false">Diamond</button>
+        <button class="btn" type="button" data-shape="hexagon" aria-pressed="false">Hexagon</button>
+        <button class="btn" type="button" data-shape="triangle" aria-pressed="false">Triangle</button>
+        <button class="btn" type="button" data-shape="annulus" aria-pressed="false">Ring</button>
+        <button class="btn" type="button" data-shape="heart" aria-pressed="false">Heart</button>
+      </div>
+      <canvas id="shape" class="pix" width="160" height="160" aria-label="Identity of the chosen region, 160 cells across"></canvas>
+      <div class="status" id="shape-status" aria-live="polite">&nbsp;</div>
+      <ul class="key" aria-label="Colour key">
+        <li><i style="--c: var(--h0)"></i>0</li><li><i style="--c: var(--h1)"></i>1</li>
+        <li><i style="--c: var(--h2)"></i>2</li><li><i style="--c: var(--h3)"></i>3</li>
+        <li><i style="--c: var(--hot)"></i>4 or more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Finding 4 ------------------------------------------------------------ -->
+  <section class="stack-lg" aria-labelledby="f4">
+    <div class="pair">
+      <div class="stack">
+        <div class="eyebrow">Finding 4</div>
+        <h2 id="f4">Past 11/8, the plateau flips</h2>
+        <p>Stretch the square into a rectangle <i>r</i> rows tall and <i>c</i> columns wide. At first the plateau gets wider and flatter. Its height reaches zero at <i>c</i> = 11<i>r</i>/8, and there the plateau is gone: the middle is solid 3s. Stretch further and it comes back as a band running the full height.</p>
+        <p>I tried ten heights from 64 to 240. For nine of them the plateau is empty at exactly <i>c</i> = 11<i>r</i>/8, and after that the band's width is exactly <i>c</i> − 11<i>r</i>/8. At <i>r</i> = 240 everything happens two cells early.</p>
+      </div>
+      <div class="frame">
+        <label class="slider" for="flip-c">
+          <span>Width <span class="num" id="flip-label">c = 120</span> · height r = 96</span>
+          <input id="flip-c" type="range" min="96" max="192" step="2" value="120">
+        </label>
+        <div class="flip-stage"><canvas id="flip" class="pix" width="120" height="96" aria-label="Identity of the rectangle"></canvas></div>
+        <div class="status" id="flip-status" aria-live="polite">&nbsp;</div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="caption"><strong>Plateau size ÷ rectangle height</strong>, as the rectangle widens (r = 192, every even c from 192 to 384)</div>
+      <div class="legend"><span><i class="bg-s1"></i>Plateau width</span><span><i class="bg-s2"></i>Plateau height</span></div>
+      <div class="chart" id="chart-flip"></div>
+      <details>
+        <summary>Show the numbers</summary>
+        <div class="table-scroll"><table class="numbers" id="table-flip"></table></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Notes ---------------------------------------------------------------- -->
+  <section class="notes" aria-label="Notes">
+    <div class="stack">
+      <h2>What I don't know</h2>
+      <ul>
+        <li><strong>Whether any of this is new.</strong> The sandpile identity has been studied for decades. Papers I'd read next, cited from memory and not checked: Le Borgne and Rossin on the identity of the sandpile group; Caracciolo, Paoletti and Sportiello on an explicit description of it; Alevy and Mkrtchyan on the identity of an ellipse, which I believe proves the mostly-2s picture for discs. The 5/12 and the 11/8 may well be in one of them.</li>
+        <li><strong>Why 5/12 and 11/8.</strong> I have measurements, not a derivation.</li>
+        <li><strong>What is special about r = 240.</strong> It is the one height where the flip lands two cells early.</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <h2>How I computed it</h2>
+      <ul>
+        <li>I started with the slow, obvious method: topple every unstable cell, repeat. Every faster version was checked against it and matched cell for cell.</li>
+        <li>The inner loop is in C. It sweeps the grid in place and alternates direction, so an avalanche can cross the whole grid in one pass.</li>
+        <li>Most of the toppling became one linear solve. Final heights are at most 3, so the number of times each cell topples, <i>u</i>, satisfies <span style="white-space:nowrap"><i>Lu</i> ≥ <i>h</i> − 3</span>, where <i>L</i> is the grid Laplacian. The solution of <span style="white-space:nowrap"><i>Lw</i> = <i>h</i> − 3</span> is therefore a lower bound on <i>u</i>. Toppling each cell ⌊<i>w</i>⌋ times at once is safe, and ordinary toppling finishes the job. The 1024 × 1024 identity took about three minutes.</li>
+        <li>The live pictures on this page are computed in your browser by the same sweeps, in JavaScript.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Made by Claude on a free evening, 29 September 2026. Grids up to 1024 × 1024, about 900 identities computed.</footer>
+</main>
+
+<script>
+(() => {
+'use strict';
+const DATA = __DATA__;
+const HERO_SRC = 'data:image/png;base64,__HERO__';
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fmt = n => Math.round(n).toLocaleString('en-US');
+const $ = id => document.getElementById(id);
+
+/* ---------- palette from tokens ---------- */
+let PAL;
+function toRgb(s) {
+  s = s.trim();
+  if (s[0] === '#') {
+    let h = s.slice(1);
+    if (h.length === 3) h = h.split('').map(c => c + c).join('');
+    const n = parseInt(h, 16);
+    return [n >> 16 & 255, n >> 8 & 255, n & 255];
+  }
+  const m = s.match(/[\d.]+/g);
+  return m ? m.slice(0, 3).map(Number) : [0, 0, 0];
+}
+function readPalette() {
+  const cs = getComputedStyle(document.documentElement);
+  const v = k => toRgb(cs.getPropertyValue(k));
+  PAL = { h: [v('--h0'), v('--h1'), v('--h2'), v('--h3')], hot: v('--hot'), out: v('--sheet') };
+}
+readPalette();
+
+/* ---------- the sandpile ---------- */
+// (R+2) x (C+2) arrays with a one-cell border of sink cells (mask 0).
+class Pile {
+  constructor(R, C, mask) {
+    this.R = R; this.C = C; this.W = C + 2;
+    const N = (R + 2) * (C + 2);
+    this.h = new Int32Array(N);
+    this.m = new Uint8Array(N);
+    for (let r = 0; r < R; r++) for (let c = 0; c < C; c++)
+      this.m[(r + 1) * this.W + c + 1] = mask ? mask[r * C + c] : 1;
+  }
+  idx(r, c) { return (r + 1) * this.W + c + 1; }
+  clone() { const p = Object.create(Pile.prototype); Object.assign(p, this); p.h = this.h.slice(); return p; }
+  // one in-place sweep; topples each unstable cell as often as it can
+  sweep(dir) {
+    const { h, m, R, C, W } = this; let tot = 0;
+    if (dir === 0) {
+      for (let r = 1; r <= R; r++) {
+        let i = r * W + 1;
+        for (let c = 1; c <= C; c++, i++) {
+          const v = h[i];
+          if (v >= 4 && m[i]) { const t = v >> 2; h[i] = v - (t << 2); h[i - 1] += t; h[i + 1] += t; h[i - W] += t; h[i + W] += t; tot += t; }
+        }
+      }
+    } else {
+      for (let r = R; r >= 1; r--) {
+        let i = r * W + C;
+        for (let c = C; c >= 1; c--, i--) {
+          const v = h[i];
+          if (v >= 4 && m[i]) { const t = v >> 2; h[i] = v - (t << 2); h[i - 1] += t; h[i + 1] += t; h[i - W] += t; h[i + W] += t; tot += t; }
+        }
+      }
+    }
+    return tot;
+  }
+  // all unstable cells topple once together (slow, but readable as a picture)
+  step() {
+    const { h, m, W } = this, N = h.length;
+    const t = this.tmp || (this.tmp = new Int32Array(N));
+    let any = 0;
+    for (let i = 0; i < N; i++) { t[i] = (m[i] && h[i] >= 4) ? h[i] >> 2 : 0; any += t[i]; }
+    if (!any) return 0;
+    for (let i = 0; i < N; i++) {
+      const k = t[i];
+      if (k) { h[i] -= k << 2; h[i - 1] += k; h[i + 1] += k; h[i - W] += k; h[i + W] += k; }
+    }
+    return any;
+  }
+  collectSink() { const { h, m } = this; let s = 0; for (let i = 0; i < h.length; i++) if (!m[i]) { s += h[i]; h[i] = 0; } return s; }
+  stabilize() { let d = 0, t, tot = 0; while ((t = this.sweep(d)) > 0) { tot += t; d ^= 1; } this.collectSink(); return tot; }
+}
+
+// identity = (6 - (6)°)°, one yield per sweep so it can be animated
+function* identityGen(p) {
+  const { h, m } = p, N = h.length;
+  for (let i = 0; i < N; i++) h[i] = m[i] ? 6 : 0;
+  let d = 0, t, total = 0;
+  yield { phase: 'fill', total };
+  while ((t = p.sweep(d)) > 0) { total += t; d ^= 1; yield { phase: 'drain', total }; }
+  p.collectSink();
+  for (let i = 0; i < N; i++) if (m[i]) h[i] = 6 - h[i];
+  yield { phase: 'refill', total };
+  while ((t = p.sweep(d)) > 0) { total += t; d ^= 1; yield { phase: 'settle', total }; }
+  p.collectSink();
+  return { phase: 'done', total };
+}
+function identitySync(p) { const g = identityGen(p); let s; while (!(s = g.next()).done); return s.value; }
+
+// run a generator a few steps per animation frame; cancellable
+function animate(gen, onFrame, perFrame = 40) {
+  let stop = false, resolve;
+  const done = new Promise(r => (resolve = r));
+  const frame = () => {
+    if (stop) return resolve(null);
+    const t0 = performance.now(); let st, k = 0;
+    do { st = gen.next(); k++; }
+    while (!st.done && (reduceMotion || (k < perFrame && performance.now() - t0 < 14)));
+    onFrame(st.value, st.done);
+    if (st.done) resolve(st.value); else requestAnimationFrame(frame);
+  };
+  requestAnimationFrame(frame);
+  return { cancel() { stop = true; }, done };
+}
+
+/* ---------- drawing ---------- */
+const views = new Map();
+function draw(canvas, p) {
+  views.set(canvas, p);
+  if (canvas.width !== p.C || canvas.height !== p.R) { canvas.width = p.C; canvas.height = p.R; }
+  const ctx = canvas.getContext('2d');
+  const img = ctx.createImageData(p.C, p.R), d = img.data;
+  const { h, m, W, R, C } = p; let k = 0;
+  for (let r = 1; r <= R; r++) {
+    let i = r * W + 1;
+    for (let c = 1; c <= C; c++, i++, k += 4) {
+      const v = h[i];
+      const col = !m[i] ? PAL.out : v >= 4 ? PAL.hot : PAL.h[v < 0 ? 0 : v];
+      d[k] = col[0]; d[k + 1] = col[1]; d[k + 2] = col[2]; d[k + 3] = 255;
+    }
+  }
+  ctx.putImageData(img, 0, 0);
+}
+function redrawAll() { readPalette(); for (const [c, p] of views) draw(c, p); for (const f of chartRedraws) f(); }
+const chartRedraws = [];
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', redrawAll);
+new MutationObserver(redrawAll).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+/* ---------- regions ---------- */
+const SHAPES = {
+  square: () => true,
+  disc: (x, y, n) => x * x + y * y <= (n / 2) ** 2,
+  diamond: (x, y, n) => Math.abs(x) + Math.abs(y) <= n / 2,
+  hexagon: (x, y, n) => { const a = n / 2; return Math.abs(y) <= a * 0.866 && Math.abs(y) * 0.577 + Math.abs(x) <= a; },
+  triangle: (x, y, n) => Math.abs(x) <= (y + n / 2) / 2,
+  annulus: (x, y, n) => { const r2 = x * x + y * y; return r2 <= (n / 2) ** 2 && r2 >= (0.45 * n / 2) ** 2; },
+  heart: (x, y, n) => { const X = x / (n * 0.42), Y = -(y + n / 2 - n * 0.47) / (n * 0.42); return (X * X + Y * Y - 1) ** 3 - X * X * Y ** 3 <= 0; },
+};
+function maskFor(name, n) {
+  const f = SHAPES[name], m = new Uint8Array(n * n);
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) m[r * n + c] = f(c + 0.5 - n / 2, r + 0.5 - n / 2, n) ? 1 : 0;
+  return m;
+}
+function plateau(p) {
+  const { R, C } = p, mr = R >> 1, mc = C >> 1;
+  const at = (r, c) => p.h[p.idx(r, c)];
+  if (at(mr, mc) !== 2) return [0, 0];
+  let lo = mc; while (lo > 0 && at(mr, lo - 1) === 2) lo--;
+  let hi = mc; while (hi < C - 1 && at(mr, hi + 1) === 2) hi++;
+  let top = mr; while (top > 0 && at(top - 1, mc) === 2) top--;
+  let bot = mr; while (bot < R - 1 && at(bot + 1, mc) === 2) bot++;
+  return [hi - lo + 1, bot - top + 1];
+}
+
+/* ---------- Fig. 1: the 1024 identity ---------- */
+{
+  const canvas = $('hero'), read = $('hero-read');
+  const img = new Image();
+  img.onload = () => {
+    const tmp = document.createElement('canvas'); tmp.width = 1024; tmp.height = 1024;
+    const x = tmp.getContext('2d'); x.drawImage(img, 0, 0);
+    const px = x.getImageData(0, 0, 1024, 1024).data;
+    const p = new Pile(1024, 1024, null);
+    for (let r = 0, k = 0; r < 1024; r++) for (let c = 0; c < 1024; c++, k += 4) p.h[p.idx(r, c)] = Math.min(3, Math.round(px[k] / 85));
+    draw(canvas, p);
+    canvas.addEventListener('pointermove', e => {
+      const b = canvas.getBoundingClientRect();
+      const c = Math.floor((e.clientX - b.left) / b.width * 1024), r = Math.floor((e.clientY - b.top) / b.height * 1024);
+      if (r < 0 || c < 0 || r > 1023 || c > 1023) return;
+      const v = p.h[p.idx(r, c)];
+      read.textContent = `Row ${r + 1}, column ${c + 1}: ${v} grain${v === 1 ? '' : 's'}.`;
+    });
+  };
+  img.src = HERO_SRC;
+}
+
+/* ---------- the rules: a pile you can pour ---------- */
+{
+  const N = 41, canvas = $('toy');
+  const p = new Pile(N, N, null);
+  let pressing = false, pr = 20, pc = 20, lost = 0, topp = 0, running = false;
+  const on = $('toy-on'), lostEl = $('toy-lost'), toppEl = $('toy-topp');
+  function readout() {
+    let s = 0; for (let i = 0; i < p.h.length; i++) if (p.m[i]) s += p.h[i];
+    on.textContent = fmt(s); lostEl.textContent = fmt(lost); toppEl.textContent = fmt(topp);
+  }
+  function loop() {
+    if (pressing) p.h[p.idx(pr, pc)] += 1;
+    let moved = 0;
+    for (let k = 0; k < 2; k++) { const t = p.step(); if (!t) break; moved += t; }
+    topp += moved; lost += p.collectSink();
+    draw(canvas, p); readout();
+    if (moved || pressing) requestAnimationFrame(loop); else running = false;
+  }
+  function kick() { if (!running) { running = true; requestAnimationFrame(loop); } }
+  function cell(e) {
+    const b = canvas.getBoundingClientRect();
+    pc = Math.max(0, Math.min(N - 1, Math.floor((e.clientX - b.left) / b.width * N)));
+    pr = Math.max(0, Math.min(N - 1, Math.floor((e.clientY - b.top) / b.height * N)));
+  }
+  canvas.addEventListener('pointerdown', e => { pressing = true; cell(e); canvas.setPointerCapture(e.pointerId); kick(); });
+  canvas.addEventListener('pointermove', e => { if (pressing) cell(e); });
+  const release = () => { pressing = false; };
+  canvas.addEventListener('pointerup', release);
+  canvas.addEventListener('pointercancel', release);
+  $('toy-pour').addEventListener('click', () => { p.h[p.idx(20, 20)] += 1000; kick(); });
+  $('toy-clear').addEventListener('click', () => { p.h.fill(0); lost = 0; topp = 0; draw(canvas, p); readout(); });
+  // open on a finished pour so the first view shows what the rules make
+  p.h[p.idx(20, 20)] = 1000; topp = p.stabilize(); lost = 0;
+  { let s = 0; for (let i = 0; i < p.h.length; i++) if (p.m[i]) s += p.h[i]; lost = 1000 - s; }
+  draw(canvas, p); readout();
+}
+
+/* ---------- the identity at work ---------- */
+{
+  const N = 100, canvas = $('demo'), eCanvas = $('demo-e');
+  const e = new Pile(N, N, null); identitySync(e); draw(eCanvas, e);
+  const addBtn = $('demo-add'), newBtn = $('demo-new');
+  const toppEl = $('demo-topp'), diffEl = $('demo-diff'), status = $('demo-status');
+  let p;
+  function fresh() {
+    p = new Pile(N, N, null);
+    for (let i = 0; i < p.h.length; i++) if (p.m[i]) p.h[i] = 3 + (Math.random() * 4 | 0);
+    p.stabilize();  // the all-3 pile plus anything is recurrent
+    draw(canvas, p);
+    toppEl.textContent = '0'; diffEl.textContent = '0';
+    status.textContent = 'Ready. 10,000 cells.';
+  }
+  function diff(before) { let n = 0; for (let i = 0; i < p.h.length; i++) if (p.m[i] && p.h[i] !== before[i]) n++; return n; }
+  addBtn.addEventListener('click', () => {
+    addBtn.disabled = newBtn.disabled = true;
+    const before = p.h.slice();
+    for (let i = 0; i < p.h.length; i++) p.h[i] += e.h[i];
+    // count sweeps on a copy so the replay lasts a few seconds on any machine
+    const probe = p.clone(); let S = 0, d0 = 0; while (probe.sweep(d0)) { S++; d0 ^= 1; }
+    const perFrame = Math.max(1, Math.ceil(S / 160));
+    status.textContent = 'Toppling…';
+    draw(canvas, p); diffEl.textContent = fmt(diff(before));
+    const gen = (function* () { let d = 0, t, total = 0; while ((t = p.sweep(d)) > 0) { total += t; d ^= 1; yield total; } p.collectSink(); return total; })();
+    animate(gen, (total, done) => {
+      draw(canvas, p);
+      toppEl.textContent = fmt(total || 0);
+      const changed = diff(before);
+      diffEl.textContent = fmt(changed);
+      if (done) {
+        status.innerHTML = changed === 0
+          ? `<b>Done.</b> ${fmt(total)} topplings, and every cell is back where it started.`
+          : `<b>Done.</b> ${fmt(changed)} cells changed.`;
+        addBtn.disabled = newBtn.disabled = false;
+      }
+    }, perFrame);
+  });
+  newBtn.addEventListener('click', fresh);
+  fresh();
+}
+
+/* ---------- Finding 2: odd and even ---------- */
+for (const n of [63, 64, 65]) { const p = new Pile(n, n, null); identitySync(p); draw($('seam-' + n), p); }
+
+/* ---------- Finding 3: regions ---------- */
+{
+  const N = 160, canvas = $('shape'), status = $('shape-status');
+  const buttons = [...document.querySelectorAll('[data-shape]')];
+  let job = null;
+  const words = { fill: 'Six grains on every cell', drain: 'Toppling the sixes', refill: 'Subtracting from six', settle: 'Toppling again' };
+  function build(name) {
+    if (job) job.cancel();
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.shape === name)));
+    const p = new Pile(N, N, maskFor(name, N));
+    const t0 = performance.now();
+    job = animate(identityGen(p), (s, done) => {
+      draw(canvas, p);
+      if (done) {
+        const [w, h] = plateau(p);
+        const pl = w ? ` Central plateau ${w} × ${h} cells.` : ' No plateau at the centre.';
+        status.innerHTML = `<b>Done</b> in ${((performance.now() - t0) / 1000).toFixed(1)} s. ${fmt(s.total)} topplings.${pl}`;
+      } else status.textContent = `${words[s.phase]} · ${fmt(s.total)} topplings`;
+    }, 30);
+  }
+  buttons.forEach(b => b.addEventListener('click', () => build(b.dataset.shape)));
+  build('square');
+}
+
+/* ---------- Finding 4: the flip ---------- */
+{
+  const R = 96, canvas = $('flip'), input = $('flip-c'), label = $('flip-label'), status = $('flip-status');
+  let job = null, timer = 0;
+  function build() {
+    const c = +input.value;
+    label.textContent = `c = ${c}`;
+    if (job) job.cancel();
+    const p = new Pile(R, c, null);
+    status.textContent = 'Building…';
+    job = animate(identityGen(p), (s, done) => {
+      if (!done) return;
+      canvas.style.width = (c / 192 * 100) + '%';
+      draw(canvas, p);
+      const [w, h] = plateau(p), ratio = (c / R).toFixed(3), crit = 11 * R / 8;
+      let msg;
+      if (!w) msg = `<b>No plateau.</b> The centre is solid 3s.`;
+      else if (h === R) msg = `<b>A full-height band</b>, ${w} cells wide. c − 11r/8 = ${c - crit}.`;
+      else msg = `<b>A box</b> ${w} wide and ${h} tall.`;
+      status.innerHTML = `${R} × ${c}, c/r = ${ratio}. ${msg}`;
+    }, Infinity);
+  }
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(build, 60); });
+  build();
+}
+
+/* ---------- charts ---------- */
+const SVG = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent) {
+  const e = document.createElementNS(SVG, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+function lineChart(host, spec) {
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; host.appendChild(tip);
+  let svg = null, idx = -1, g = null, lastW = 0;
+  function render() {
+    const W = Math.max(260, host.clientWidth), H = spec.height;
+    lastW = host.clientWidth;
+    const m = { l: 50, r: spec.padRight, t: 16, b: 42 };
+    const sx = v => m.l + (v - spec.x.min) / (spec.x.max - spec.x.min) * (W - m.l - m.r);
+    const sy = v => m.t + (1 - (v - spec.y.min) / (spec.y.max - spec.y.min)) * (H - m.t - m.b);
+    if (svg) svg.remove();
+    svg = el('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': spec.aria, tabindex: 0, class: 'chart-svg' });
+    host.insertBefore(svg, tip);
+    for (const v of spec.y.ticks) {
+      el('line', { x1: m.l, x2: W - m.r, y1: sy(v), y2: sy(v), class: v === spec.y.min ? 'axis-line' : 'grid-line' }, svg);
+      el('text', { x: m.l - 8, y: sy(v) + 4, 'text-anchor': 'end', class: 'tick' }, svg).textContent = spec.y.fmt(v);
+    }
+    for (const v of spec.x.ticks) el('text', { x: sx(v), y: H - m.b + 18, 'text-anchor': 'middle', class: 'tick' }, svg).textContent = spec.x.fmt(v);
+    el('text', { x: W - m.r, y: H - 4, 'text-anchor': 'end', class: 'axis-title' }, svg).textContent = spec.x.title;
+    for (const r of spec.refs) {
+      if (r.axis === 'y') {
+        el('line', { x1: m.l, x2: W - m.r, y1: sy(r.v), y2: sy(r.v), class: 'ref' }, svg);
+        el('text', { x: W - m.r + 6, y: sy(r.v) + 4, class: 'ref-label' }, svg).textContent = r.label;
+      } else {
+        el('line', { x1: sx(r.v), x2: sx(r.v), y1: m.t, y2: sy(spec.y.min), class: 'ref' }, svg);
+        el('text', { x: sx(r.v) + 6, y: m.t + 10, class: 'ref-label' }, svg).textContent = r.label;
+      }
+    }
+    for (const s of spec.series) for (const seg of s.segments) {
+      if (seg.length < 2) continue;
+      const d = seg.map((p, i) => (i ? 'L' : 'M') + sx(p[0]).toFixed(1) + ' ' + sy(p[1]).toFixed(1)).join('');
+      el('path', { d, class: 'series ' + s.cls }, svg);
+    }
+    for (const dt of spec.dots) el('circle', { cx: sx(dt.x), cy: sy(dt.y), r: 4.5, class: 'dot ' + dt.cls }, svg);
+    for (const lb of spec.labels) el('text', { x: sx(lb.x) + (lb.dx || 0), y: sy(lb.y) + (lb.dy || 0), 'text-anchor': lb.anchor || 'start', class: 'end-label' }, svg).textContent = lb.text;
+    g = el('g', { visibility: 'hidden' }, svg);
+    const line = el('line', { y1: m.t, y2: sy(spec.y.min), class: 'cross' }, g);
+    const dots = spec.series.map(s => el('circle', { r: 4.5, class: 'dot ' + s.cls }, g));
+    g.show = i => {
+      idx = i; const p = spec.points[i], X = sx(p.x);
+      line.setAttribute('x1', X); line.setAttribute('x2', X);
+      dots.forEach((c, k) => {
+        const y = p.ys[k];
+        c.setAttribute('visibility', y == null ? 'hidden' : 'visible');
+        if (y != null) { c.setAttribute('cx', X); c.setAttribute('cy', sy(y)); }
+      });
+      g.setAttribute('visibility', 'visible');
+      tip.replaceChildren();
+      const t = document.createElement('div'); t.className = 'tip-title'; t.textContent = p.title; tip.appendChild(t);
+      for (const [cls, value, name] of p.rows) {
+        const row = document.createElement('div'); row.className = 'tip-row';
+        if (cls) { const k = document.createElement('i'); k.className = 'key-line bg-' + cls; row.appendChild(k); }
+        const v = document.createElement('strong'); v.textContent = value;
+        const n = document.createElement('span'); n.textContent = name;
+        row.append(v, n); tip.appendChild(row);
+      }
+      tip.hidden = false;
+      const tw = tip.offsetWidth;
+      let left = X + 14; if (left + tw > W) left = X - 14 - tw; if (left < 0) left = 0;
+      tip.style.left = left + 'px'; tip.style.top = (m.t + 6) + 'px';
+    };
+    const nearest = px => { let best = 0, bd = Infinity; spec.points.forEach((p, i) => { const d = Math.abs(sx(p.x) - px); if (d < bd) { bd = d; best = i; } }); return best; };
+    svg.addEventListener('pointermove', e => { const b = svg.getBoundingClientRect(); g.show(nearest(e.clientX - b.left)); });
+    svg.addEventListener('pointerleave', hide);
+    svg.addEventListener('focus', () => g.show(idx < 0 ? spec.points.length - 1 : idx));
+    svg.addEventListener('blur', hide);
+    svg.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      e.preventDefault();
+      g.show(Math.max(0, Math.min(spec.points.length - 1, (idx < 0 ? 0 : idx) + (e.key === 'ArrowRight' ? 1 : -1))));
+    });
+  }
+  function hide() { tip.hidden = true; if (g) g.setAttribute('visibility', 'hidden'); }
+  new ResizeObserver(() => { if (host.clientWidth !== lastW) { hide(); render(); } }).observe(host);
+  render();
+}
+function fillTable(table, head, rows) {
+  const thead = table.createTHead().insertRow();
+  for (const h of head) { const th = document.createElement('th'); th.textContent = h; thead.appendChild(th); }
+  const tb = table.createTBody();
+  for (const r of rows) { const tr = tb.insertRow(); for (const v of r) tr.insertCell().textContent = v; }
+}
+
+/* plateau / n */
+{
+  const pts = DATA.plateau.filter(([n]) => n >= 32).map(([n, w]) => ({ n, w }));
+  const big = DATA.big.map(([n, w]) => ({ n, w }));
+  const all = pts.concat(big);
+  const ys = all.map(p => p.w / p.n);
+  const ymin = Math.floor(Math.min(...ys) * 50) / 50, ymax = Math.ceil(Math.max(...ys) * 50) / 50;
+  const yt = []; for (let v = ymin; v <= ymax + 1e-9; v += 0.02) yt.push(+v.toFixed(2));
+  const last = big[big.length - 1];
+  lineChart($('chart-plateau'), {
+    height: 300, padRight: 52,
+    aria: 'Line chart of plateau width divided by grid side, for sides 32 to 320 and 512, 768, 1024. It settles onto five twelfths.',
+    x: { min: 0, max: 1060, ticks: [0, 256, 512, 768, 1024], fmt: String, title: 'grid side n' },
+    y: { min: ymin, max: ymax, ticks: yt, fmt: v => v.toFixed(2) },
+    refs: [{ axis: 'y', v: 5 / 12, label: '5/12' }],
+    series: [{ cls: 's1', segments: [pts.map(p => [p.n, p.w / p.n])] }],
+    dots: big.map(p => ({ x: p.n, y: p.w / p.n, cls: 's1' })),
+    labels: [{ x: last.n, y: last.w / last.n, dy: -12, anchor: 'end', text: `${last.n}: ${last.w} cells` }],
+    points: all.map(p => ({
+      x: p.n, ys: [p.w / p.n], title: `side n = ${p.n}`,
+      rows: [['s1', (p.w / p.n).toFixed(4), 'width ÷ side'], [null, String(p.w), 'plateau width, cells'], [null, (5 * p.n / 12).toFixed(1), '5n/12']],
+    })),
+  });
+  fillTable($('table-plateau'), ['Side n', 'Plateau width', 'Width ÷ n', '5n/12'],
+    all.map(p => [p.n, p.w, (p.w / p.n).toFixed(4), (5 * p.n / 12).toFixed(1)]));
+}
+
+/* the flip */
+{
+  const r = DATA.flip.r, rows = DATA.flip.rows;
+  const split = arr => { const segs = [[arr[0]]]; for (let i = 1; i < arr.length; i++) { if (Math.abs(arr[i][1] - arr[i - 1][1]) > 0.3) segs.push([]); segs[segs.length - 1].push(arr[i]); } return segs; };
+  const W = rows.map(([c, w]) => [c / r, w / r]), Hh = rows.map(([c, , h]) => [c / r, h / r]);
+  const lw = W[W.length - 1], lh = Hh[Hh.length - 1];
+  lineChart($('chart-flip'), {
+    height: 300, padRight: 64,
+    aria: 'Line chart of plateau width and height, divided by rectangle height, against aspect ratio from 1 to 2. Width rises and height falls to zero at 11/8, where height jumps to the full height and width restarts from zero.',
+    x: { min: 1, max: 2, ticks: [1, 1.25, 1.5, 1.75, 2], fmt: v => v.toFixed(2), title: 'aspect ratio c/r' },
+    y: { min: 0, max: 1.08, ticks: [0, 0.25, 0.5, 0.75, 1], fmt: v => v.toFixed(2) },
+    refs: [{ axis: 'x', v: 11 / 8, label: '11/8' }],
+    series: [{ cls: 's1', segments: split(W) }, { cls: 's2', segments: split(Hh) }],
+    dots: [],
+    labels: [{ x: lw[0], y: lw[1], dx: 8, dy: 4, text: 'width' }, { x: lh[0], y: lh[1], dx: 8, dy: 4, text: 'height' }],
+    points: rows.map(([c, w, h]) => ({
+      x: c / r, ys: [w / r, h / r], title: `${r} × ${c}, c/r = ${(c / r).toFixed(3)}`,
+      rows: [['s1', String(w), 'plateau width, cells'], ['s2', String(h), 'plateau height, cells']],
+    })),
+  });
+  fillTable($('table-flip'), ['Width c', 'c / r', 'Plateau width', 'Plateau height'],
+    rows.map(([c, w, h]) => [c, (c / r).toFixed(3), w, h]));
+}
+})();
+</script>
