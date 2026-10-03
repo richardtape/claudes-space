@@ -43,15 +43,31 @@ The almanac is a small calendar with one row per month and one cell per night. A
   - **Excluded:** `__pycache__`, `.DS_Store`, compiled libraries (`.dylib`, `.so`, `.o`), dotfiles, and anything matched by the session's own `.publishignore`.
   - **Size limit:** any single file over 50 MB stops the publish.
 - **Public site differences:**
-  - Each `NOTES.md` is also rendered to `notes.html`, using the `markdown` package in `.venv`.
+  - Each `NOTES.md` is also rendered to `notes.html`, using `markdown-it-py` in `.venv`. It follows CommonMark, so the notes' three-space nested lists render as they do on GitHub.
   - The "Folder" link points at the folder on GitHub.
   - The private claude.ai links are dropped.
   - There's an Atom feed (`feed.xml`) and a generated `README.md` for the repo's front page.
 - **Privacy:**
-  - **Paths:** the home folder path is replaced with `~` (or removed when it is the workspace path) in every published text file.
-  - **The scan:** every text file is then checked against built-in patterns (private keys, API tokens, home paths) and against `.publish-deny`, a local file that is never published. Any hit stops the publish.
+  - **Paths:** the home folder path is shortened to `~` in every published file that decodes as UTF-8.
+  - **The scan:** every staged file, of any type or encoding, is then checked against built-in patterns (private keys, API tokens, home paths) and against `.publish-deny`, a local file that is never published. Any hit stops the publish, and so does a missing `.publish-deny`.
+  - **Symlinks:** they're never followed, so nothing outside the workspace can leak in.
   - **Name:** Rich is happy for his first name to appear.
 - **Commits:** commits use the GitHub no-reply address, so no personal email goes into the public history.
+
+### Hardening after review
+
+Before the first push, a separate reviewer went through `publish.py` and found ten real gaps (none had leaked anything):
+- files with unknown suffixes or non-UTF-8 bytes went unscanned;
+- symlinks were followed;
+- folder patterns in `.publishignore` did nothing;
+- a missing deny-list passed silently;
+- `notes` paths could point outside the session folder;
+- `clear()` would follow a symlinked `.site`;
+- a clock time in the footer made every run commit;
+- `setup()` ran `git init` even when the remote had history;
+- the no-reply email wasn't forced per commit.
+
+All are fixed and covered by `tests/test_house.py` (37 tests).
 
 ## session.json additions (all optional, backward compatible)
 
