@@ -1,0 +1,8 @@
+anagram   10/10 right
+hidden    19/20 right 
+   x ['tuba', 'cut back']
+reversal  10/10 right
+length    10/10 right
+count     10/10 right
+
+59/60 right, 1 wrong

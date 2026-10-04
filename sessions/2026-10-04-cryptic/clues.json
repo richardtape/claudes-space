@@ -1,0 +1,712 @@
+[
+ {
+  "slot": "1A",
+  "answer": "DEPOSIT",
+  "enum": "7",
+  "clue": "Store takes in Spain's yes as down payment",
+  "defs": [
+   "down payment"
+  ],
+  "parse": [
+   "ins",
+   [
+    "syn",
+    "SI",
+    "Spain's yes"
+   ],
+   [
+    "syn",
+    "DEPOT",
+    "store"
+   ]
+  ],
+  "note": "SI (Spanish 'yes') taken into DEPOT (store)."
+ },
+ {
+  "slot": "5A",
+  "answer": "DECADES",
+  "enum": "7",
+  "clue": "Ten-year stretches: drinks after December",
+  "defs": [
+   "Ten-year stretches"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "DEC",
+    "December"
+   ],
+   [
+    "syn",
+    "ADES",
+    "drinks"
+   ]
+  ],
+  "note": "ADES (fruit drinks) after DEC (December).",
+  "revised": true
+ },
+ {
+  "slot": "9A",
+  "answer": "SANDPILES",
+  "enum": "9",
+  "clue": "Polish stacks? They topple in avalanches",
+  "defs": [
+   "They topple in avalanches"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "SAND",
+    "Polish"
+   ],
+   [
+    "syn",
+    "PILES",
+    "stacks"
+   ]
+  ],
+  "note": "SAND (polish) + PILES (stacks). Session 1 watched them topple.",
+  "theme": true
+ },
+ {
+  "slot": "10A",
+  "answer": "CHUTE",
+  "enum": "5",
+  "clue": "Slide about, shed energy",
+  "defs": [
+   "Slide"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "C",
+    "about"
+   ],
+   [
+    "syn",
+    "HUT",
+    "shed"
+   ],
+   [
+    "syn",
+    "E",
+    "energy"
+   ]
+  ],
+  "note": "C (circa, about) + HUT (shed) + E (energy).",
+  "revised": true
+ },
+ {
+  "slot": "11A",
+  "answer": "INCUR",
+  "enum": "5",
+  "clue": "Run up, at home with a mongrel",
+  "defs": [
+   "Run up"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "IN",
+    "at home"
+   ],
+   [
+    "syn",
+    "CUR",
+    "a mongrel"
+   ]
+  ],
+  "note": "IN (at home) + CUR (mongrel). You incur, or run up, a debt."
+ },
+ {
+  "slot": "12A",
+  "answer": "NEOLITHIC",
+  "enum": "9",
+  "clue": "Moving into Chile, like the first farmers",
+  "defs": [
+   "like the first farmers"
+  ],
+  "parse": [
+   "ana",
+   "into Chile"
+  ],
+  "note": "Anagram ('moving') of INTO CHILE."
+ },
+ {
+  "slot": "13A",
+  "answer": "REGIONS",
+  "enum": "7",
+  "clue": "Ignores developing areas",
+  "defs": [
+   "areas"
+  ],
+  "parse": [
+   "ana",
+   "ignores"
+  ],
+  "note": "Anagram ('developing') of IGNORES."
+ },
+ {
+  "slot": "15A",
+  "answer": "ECSTASY",
+  "enum": "7",
+  "clue": "Says “etc”, incoherently, in rapture",
+  "defs": [
+   "rapture"
+  ],
+  "parse": [
+   "ana",
+   "says etc"
+  ],
+  "note": "Anagram ('incoherently') of SAYS ETC."
+ },
+ {
+  "slot": "17A",
+  "answer": "ADAMANT",
+  "enum": "7",
+  "clue": "First man and worker, refusing to budge",
+  "defs": [
+   "refusing to budge"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "ADAM",
+    "First man"
+   ],
+   [
+    "syn",
+    "ANT",
+    "worker"
+   ]
+  ],
+  "note": "ADAM (first man) + ANT (worker)."
+ },
+ {
+  "slot": "19A",
+  "answer": "BLESSED",
+  "enum": "7",
+  "clue": "Fewer in bed? Lucky!",
+  "defs": [
+   "Lucky"
+  ],
+  "parse": [
+   "ins",
+   [
+    "syn",
+    "LESS",
+    "Fewer"
+   ],
+   [
+    "syn",
+    "BED",
+    "bed"
+   ]
+  ],
+  "note": "LESS (fewer) in BED."
+ },
+ {
+  "slot": "21A",
+  "answer": "MEDALLION",
+  "enum": "9",
+  "clue": "Award to king of the jungle? A big pendant",
+  "defs": [
+   "A big pendant"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "MEDAL",
+    "Award"
+   ],
+   [
+    "syn",
+    "LION",
+    "king of the jungle"
+   ]
+  ],
+  "note": "MEDAL (award) next to LION (king of the jungle)."
+ },
+ {
+  "slot": "23A",
+  "answer": "PLOTS",
+  "enum": "5",
+  "clue": "Page with many storylines",
+  "defs": [
+   "storylines"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "P",
+    "Page"
+   ],
+   [
+    "syn",
+    "LOTS",
+    "many"
+   ]
+  ],
+  "note": "P (page) + LOTS (many)."
+ },
+ {
+  "slot": "25A",
+  "answer": "NOISY",
+  "enum": "5",
+  "clue": "Refusal is unknown, but loud",
+  "defs": [
+   "loud"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "NO",
+    "Refusal"
+   ],
+   [
+    "syn",
+    "IS",
+    "is"
+   ],
+   [
+    "syn",
+    "Y",
+    "unknown"
+   ]
+  ],
+  "note": "NO (refusal) + IS + Y (an unknown, in algebra)."
+ },
+ {
+  "slot": "26A",
+  "answer": "SONNETEER",
+  "enum": "9",
+  "clue": "Poet's fourteen lines, with energy and hesitation",
+  "defs": [
+   "Poet"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "SONNET",
+    "fourteen lines"
+   ],
+   [
+    "syn",
+    "E",
+    "energy"
+   ],
+   [
+    "syn",
+    "ER",
+    "hesitation"
+   ]
+  ],
+  "note": "SONNET (fourteen lines) + E (energy) + ER (hesitation). Session 3 was one.",
+  "theme": true,
+  "revised": true
+ },
+ {
+  "slot": "27A",
+  "answer": "CLEARLY",
+  "enum": "7",
+  "clue": "Obviously found in unclear lyrics",
+  "defs": [
+   "Obviously"
+  ],
+  "parse": [
+   "hid",
+   "unclear lyrics"
+  ],
+  "note": "Hidden in unCLEAR LYrics."
+ },
+ {
+  "slot": "28A",
+  "answer": "ASSUAGE",
+  "enum": "7",
+  "clue": "Sausage cooked to satisfy",
+  "defs": [
+   "satisfy"
+  ],
+  "parse": [
+   "ana",
+   "Sausage"
+  ],
+  "note": "Anagram ('cooked') of SAUSAGE. You assuage, or satisfy, a hunger."
+ },
+ {
+  "slot": "1D",
+  "answer": "DOSSIER",
+  "enum": "7",
+  "clue": "Tramp keeps one file",
+  "defs": [
+   "file"
+  ],
+  "parse": [
+   "ins",
+   [
+    "syn",
+    "I",
+    "one"
+   ],
+   [
+    "syn",
+    "DOSSER",
+    "Tramp"
+   ]
+  ],
+  "note": "DOSSER (tramp) keeps I (one) inside."
+ },
+ {
+  "slot": "2D",
+  "answer": "PANIC",
+  "enum": "5",
+  "clue": "Slate one cold? Alarm!",
+  "defs": [
+   "Alarm"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "PAN",
+    "Slate"
+   ],
+   [
+    "syn",
+    "I",
+    "one"
+   ],
+   [
+    "syn",
+    "C",
+    "cold"
+   ]
+  ],
+  "note": "PAN (slate, criticise) + I (one) + C (cold).",
+  "revised": true
+ },
+ {
+  "slot": "3D",
+  "answer": "SUPERNOVA",
+  "enum": "9",
+  "clue": "Explosion of great new star",
+  "defs": [
+   "Explosion"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "SUPER",
+    "great"
+   ],
+   [
+    "syn",
+    "NOVA",
+    "new star"
+   ]
+  ],
+  "note": "SUPER (great) + NOVA (a new star). Tycho called the supernova of 1572 ‘De nova stella’, the new star.",
+  "revised": true
+ },
+ {
+  "slot": "4D",
+  "answer": "TALENTS",
+  "enum": "7",
+  "clue": "Gifts: story, books and son",
+  "defs": [
+   "Gifts"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "TALE",
+    "story"
+   ],
+   [
+    "syn",
+    "NT",
+    "books"
+   ],
+   [
+    "syn",
+    "S",
+    "son"
+   ]
+  ],
+  "note": "TALE (story) + NT (books: the New Testament) + S (son)."
+ },
+ {
+  "slot": "5D",
+  "answer": "DISPOSE",
+  "enum": "7",
+  "clue": "What God will do after man proposes",
+  "defs": [],
+  "parse": [
+   "cd"
+  ],
+  "note": "Cryptic definition, from the proverb 'Man proposes, God disposes'.",
+  "revised": true
+ },
+ {
+  "slot": "6D",
+  "answer": "CACTI",
+  "enum": "5",
+  "clue": "Prickly characters stuck in comic acting",
+  "defs": [
+   "Prickly characters"
+  ],
+  "parse": [
+   "hid",
+   "comic acting"
+  ],
+  "note": "Hidden in comiC ACTIng."
+ },
+ {
+  "slot": "7D",
+  "answer": "DRUMHEADS",
+  "enum": "9",
+  "clue": "Beat the bosses? They'll take a beating",
+  "defs": [
+   "They'll take a beating"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "DRUM",
+    "Beat"
+   ],
+   [
+    "syn",
+    "HEADS",
+    "the bosses"
+   ]
+  ],
+  "note": "DRUM (beat) + HEADS (bosses). Session 2's two skins.",
+  "theme": true
+ },
+ {
+  "slot": "8D",
+  "answer": "SKETCHY",
+  "enum": "7",
+  "clue": "Skit ending in parody is lacking detail",
+  "defs": [
+   "lacking detail"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "SKETCH",
+    "Skit"
+   ],
+   [
+    "last",
+    "parody"
+   ]
+  ],
+  "note": "SKETCH (skit) + Y (the ending of parody)."
+ },
+ {
+  "slot": "14D",
+  "answer": "GRANDSIRE",
+  "enum": "9",
+  "clue": "Bell-ringers' method: excellent father",
+  "defs": [
+   "Bell-ringers' method"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "GRAND",
+    "excellent"
+   ],
+   [
+    "syn",
+    "SIRE",
+    "father"
+   ]
+  ],
+  "note": "GRAND (excellent) + SIRE (father). Session 4 rang a peal of Grandsire Triples.",
+  "theme": true
+ },
+ {
+  "slot": "16D",
+  "answer": "SLEEPLESS",
+  "enum": "9",
+  "clue": "Sees spell broken: wide awake",
+  "defs": [
+   "wide awake"
+  ],
+  "parse": [
+   "ana",
+   "Sees spell"
+  ],
+  "note": "Anagram (‘broken’) of SEES SPELL. A fairy tale in four words.",
+  "revised": true
+ },
+ {
+  "slot": "17D",
+  "answer": "ALMANAC",
+  "enum": "7",
+  "clue": "Yearbook: a learner chap with an account",
+  "defs": [
+   "Yearbook"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "A",
+    "a"
+   ],
+   [
+    "syn",
+    "L",
+    "learner"
+   ],
+   [
+    "syn",
+    "MAN",
+    "chap"
+   ],
+   [
+    "syn",
+    "AC",
+    "an account"
+   ]
+  ],
+  "note": "A + L (learner) + MAN (chap) + AC (account)."
+ },
+ {
+  "slot": "18D",
+  "answer": "THIRSTY",
+  "enum": "7",
+  "clue": "Dry son enters thirty",
+  "defs": [
+   "Dry"
+  ],
+  "parse": [
+   "ins",
+   [
+    "syn",
+    "S",
+    "son"
+   ],
+   [
+    "syn",
+    "THIRTY",
+    "thirty"
+   ]
+  ],
+  "note": "S (son) enters THIRTY."
+ },
+ {
+  "slot": "19D",
+  "answer": "BONANZA",
+  "enum": "7",
+  "clue": "Book on endless soldier from down under? Windfall!",
+  "defs": [
+   "Windfall"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "B",
+    "Book"
+   ],
+   [
+    "syn",
+    "ON",
+    "on"
+   ],
+   [
+    "del",
+    [
+     "syn",
+     "ANZAC",
+     "soldier from down under"
+    ],
+    "C"
+   ]
+  ],
+  "note": "B (book) + ON + ANZA(c), an Anzac without his end.",
+  "revised": true
+ },
+ {
+  "slot": "20D",
+  "answer": "DESERVE",
+  "enum": "7",
+  "clue": "Merit badly severed",
+  "defs": [
+   "Merit"
+  ],
+  "parse": [
+   "ana",
+   "severed"
+  ],
+  "note": "Anagram ('badly') of SEVERED."
+ },
+ {
+  "slot": "22D",
+  "answer": "LAYER",
+  "enum": "5",
+  "clue": "Coat for a hen",
+  "defs": [
+   "Coat",
+   "a hen"
+  ],
+  "parse": [
+   "dd"
+  ],
+  "note": "Double definition: a coat of paint is a layer, and so is a hen that lays.",
+  "revised": true
+ },
+ {
+  "slot": "24D",
+  "answer": "OMEGA",
+  "enum": "5",
+  "clue": "The end: love, a gem returned",
+  "defs": [
+   "The end"
+  ],
+  "parse": [
+   "cat",
+   [
+    "syn",
+    "O",
+    "love"
+   ],
+   [
+    "rev",
+    [
+     "cat",
+     [
+      "syn",
+      "A",
+      "a"
+     ],
+     [
+      "syn",
+      "GEM",
+      "gem"
+     ]
+    ]
+   ]
+  ],
+  "note": "O (love, nil) + A GEM reversed. The ring goes back; the affair ends."
+ }
+]

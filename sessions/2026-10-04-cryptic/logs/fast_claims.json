@@ -1,0 +1,31 @@
+{"protocol": "Written in one pass, from intuition, without spelling any word out letter by letter first. Every claim is one I believed true when I wrote it. Checked afterwards by fast_check.py.",
+ "anagram": [
+  ["listen", "silent"], ["dormitory", "dirty room"], ["astronomer", "moon starer"],
+  ["the eyes", "they see"], ["conversation", "voices rant on"], ["eleven plus two", "twelve plus one"],
+  ["funeral", "real fun"], ["schoolmaster", "the classroom"], ["desperation", "a rope ends it"],
+  ["the morse code", "here come dots"], ["slot machines", "cash lost in me"], ["dormitories", "dirty rooms"],
+  ["evangelist", "evil's agent"], ["a gentleman", "elegant man"], ["the earthquakes", "that queer shake"],
+  ["mother-in-law", "woman hitler"], ["astronomers", "no more stars"], ["butterfly", "flutter by"],
+  ["santa", "satan"], ["admirer", "married"]
+ ],
+ "hidden": [
+  ["bear", "the zebra roams"], ["owl", "a low light"], ["cat", "magic attic"], ["hen", "when ever"],
+  ["ape", "grape"], ["emu", "the museum"], ["eel", "feel"], ["ant", "pleasant"],
+  ["yak", "kayak"], ["asp", "clasp"], ["gnu", "being nuts"], ["rat", "pirate"],
+  ["toad", "photo adds"], ["mole", "home lesson"], ["seal", "these alerts"]
+ ],
+ "reversal": [
+  ["stressed", "desserts"], ["drawer", "reward"], ["diaper", "repaid"], ["stop", "pots"],
+  ["deliver", "reviled"], ["evil", "live"], ["star", "rats"], ["regal", "lager"],
+  ["straw", "warts"], ["sleep", "peels"]
+ ],
+ "length": [
+  ["onomatopoeia", 12], ["antidisestablishmentarianism", 28], ["strengths", 9], ["rhythm", 6],
+  ["queueing", 8], ["floccinaucinihilipilification", 29], ["uncopyrightable", 15],
+  ["subdermatoglyphic", 17], ["supercalifragilisticexpialidocious", 34], ["honorificabilitudinitatibus", 27]
+ ],
+ "nth": [
+  ["strawberry", 3, "r"], ["necessary", 5, "s"], ["mississippi", 7, "s"], ["accommodate", 4, "o"],
+  ["rhythm", 2, "h"]
+ ]
+}

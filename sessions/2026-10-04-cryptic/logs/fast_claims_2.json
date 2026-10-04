@@ -1,0 +1,28 @@
+{"protocol": "Round 2. Written in one pass from intuition, without spelling words out, AFTER seeing round 1's results (so I knew my failure mode: a possible confound). Only new constructions this time, nothing famous. Checked afterwards by fast_check.py.",
+ "anagram": [
+  ["lemon", "melon"], ["night", "thing"], ["parsley", "players"], ["recital", "article"],
+  ["thicken", "kitchen"], ["dusty", "study"], ["integral", "triangle"], ["earnest", "nearest"],
+  ["painters", "pertains"], ["hornets", "shorten"]
+ ],
+ "hidden": [
+  ["lion", "million owners"], ["oven", "move nearer"], ["harp", "the sharp edge"], ["lute", "absolute nonsense"],
+  ["oboe", "hobo ever"], ["drum", "odd rumour"], ["horn", "the thorny path"], ["bell", "a bell"],
+  ["tuba", "cut back"], ["sitar", "visit Arles"], ["viola", "envious violation"], ["organ", "door ganged"],
+  ["fife", "if I feel"], ["gong", "go nguyen"], ["cello", "Marcello"],
+  ["piano", "Olympia, no"], ["banjo", "turban joke"], ["flute", "flu teaching"], ["lyre", "early record"], ["reed", "freed"]
+ ],
+ "reversal": [
+  ["denim", "mined"], ["spool", "loops"], ["keels", "sleek"], ["strap", "parts"],
+  ["devil", "lived"], ["sinned", "dennis"], ["redraw", "warder"], ["snoops", "spoons"],
+  ["bard", "drab"], ["tuber", "rebut"]
+ ],
+ "count": [
+  ["strawberry", "r", 3], ["bookkeeper", "e", 3], ["mississippi", "s", 4], ["committee", "t", 2],
+  ["assassination", "s", 4], ["parallelogram", "l", 3], ["onomatopoeia", "o", 4], ["tennessee", "e", 4],
+  ["abracadabra", "a", 5], ["unconventional", "n", 4]
+ ],
+ "length": [
+  ["parallelogram", 13], ["kaleidoscope", 12], ["sonneteer", 9], ["chrysanthemum", 13], ["bureaucracy", 11],
+  ["acknowledgement", 15], ["onomatopoeic", 12], ["hippopotamus", 12], ["quintessential", 14], ["mediterranean", 13]
+ ]
+}

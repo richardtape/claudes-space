@@ -1,0 +1,10 @@
+anagram   19/20 right 
+   x ['dormitories', 'dirty rooms']
+hidden    13/15 right 
+   x ['bear', 'the zebra roams'] 
+   x ['mole', 'home lesson']
+reversal  10/10 right
+length    10/10 right
+nth        5/5 right
+
+57/60 right, 3 wrong

@@ -1,0 +1,2619 @@
+{
+ "puzzle": {
+  "size": 15,
+  "blocks": [
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    13
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    10,
+    9
+   ],
+   [
+    11,
+    1
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    11
+   ],
+   [
+    11,
+    13
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    13,
+    1
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    5
+   ],
+   [
+    13,
+    7
+   ],
+   [
+    13,
+    9
+   ],
+   [
+    13,
+    11
+   ],
+   [
+    13,
+    13
+   ],
+   [
+    14,
+    7
+   ]
+  ],
+  "numbers": [
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    2,
+    2
+   ],
+   [
+    0,
+    4,
+    3
+   ],
+   [
+    0,
+    6,
+    4
+   ],
+   [
+    0,
+    8,
+    5
+   ],
+   [
+    0,
+    10,
+    6
+   ],
+   [
+    0,
+    12,
+    7
+   ],
+   [
+    0,
+    14,
+    8
+   ],
+   [
+    2,
+    0,
+    9
+   ],
+   [
+    2,
+    10,
+    10
+   ],
+   [
+    4,
+    0,
+    11
+   ],
+   [
+    4,
+    6,
+    12
+   ],
+   [
+    6,
+    0,
+    13
+   ],
+   [
+    6,
+    2,
+    14
+   ],
+   [
+    6,
+    8,
+    15
+   ],
+   [
+    6,
+    10,
+    16
+   ],
+   [
+    8,
+    0,
+    17
+   ],
+   [
+    8,
+    6,
+    18
+   ],
+   [
+    8,
+    8,
+    19
+   ],
+   [
+    8,
+    14,
+    20
+   ],
+   [
+    10,
+    0,
+    21
+   ],
+   [
+    10,
+    4,
+    22
+   ],
+   [
+    10,
+    10,
+    23
+   ],
+   [
+    10,
+    12,
+    24
+   ],
+   [
+    12,
+    0,
+    25
+   ],
+   [
+    12,
+    6,
+    26
+   ],
+   [
+    14,
+    0,
+    27
+   ],
+   [
+    14,
+    8,
+    28
+   ]
+  ],
+  "entries": [
+   {
+    "id": "1A",
+    "n": 1,
+    "dir": "A",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "answer": "DEPOSIT",
+    "clue": "Store takes in Spain's yes as down payment",
+    "enum": "7",
+    "defs": [
+     "down payment"
+    ],
+    "kind": "ins",
+    "note": "SI (Spanish 'yes') taken into DEPOT (store).",
+    "theme": false
+   },
+   {
+    "id": "1D",
+    "n": 1,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      6,
+      0
+     ]
+    ],
+    "answer": "DOSSIER",
+    "clue": "Tramp keeps one file",
+    "enum": "7",
+    "defs": [
+     "file"
+    ],
+    "kind": "ins",
+    "note": "DOSSER (tramp) keeps I (one) inside.",
+    "theme": false
+   },
+   {
+    "id": "2D",
+    "n": 2,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ]
+    ],
+    "answer": "PANIC",
+    "clue": "Slate one cold? Alarm!",
+    "enum": "5",
+    "defs": [
+     "Alarm"
+    ],
+    "kind": "cat",
+    "note": "PAN (slate, criticise) + I (one) + C (cold).",
+    "theme": false
+   },
+   {
+    "id": "3D",
+    "n": 3,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      8,
+      4
+     ]
+    ],
+    "answer": "SUPERNOVA",
+    "clue": "Explosion of great new star",
+    "enum": "9",
+    "defs": [
+     "Explosion"
+    ],
+    "kind": "cat",
+    "note": "SUPER (great) + NOVA (a new star). Tycho called the supernova of 1572 \u2018De nova stella\u2019, the new star.",
+    "theme": false
+   },
+   {
+    "id": "4D",
+    "n": 4,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    "answer": "TALENTS",
+    "clue": "Gifts: story, books and son",
+    "enum": "7",
+    "defs": [
+     "Gifts"
+    ],
+    "kind": "cat",
+    "note": "TALE (story) + NT (books: the New Testament) + S (son).",
+    "theme": false
+   },
+   {
+    "id": "5A",
+    "n": 5,
+    "dir": "A",
+    "cells": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      11
+     ],
+     [
+      0,
+      12
+     ],
+     [
+      0,
+      13
+     ],
+     [
+      0,
+      14
+     ]
+    ],
+    "answer": "DECADES",
+    "clue": "Ten-year stretches: drinks after December",
+    "enum": "7",
+    "defs": [
+     "Ten-year stretches"
+    ],
+    "kind": "cat",
+    "note": "ADES (fruit drinks) after DEC (December).",
+    "theme": false
+   },
+   {
+    "id": "5D",
+    "n": 5,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      8
+     ]
+    ],
+    "answer": "DISPOSE",
+    "clue": "What God will do after man proposes",
+    "enum": "7",
+    "defs": [],
+    "kind": "cd",
+    "note": "Cryptic definition, from the proverb 'Man proposes, God disposes'.",
+    "theme": false
+   },
+   {
+    "id": "6D",
+    "n": 6,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      4,
+      10
+     ]
+    ],
+    "answer": "CACTI",
+    "clue": "Prickly characters stuck in comic acting",
+    "enum": "5",
+    "defs": [
+     "Prickly characters"
+    ],
+    "kind": "hid",
+    "note": "Hidden in comiC ACTIng.",
+    "theme": false
+   },
+   {
+    "id": "7D",
+    "n": 7,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      12
+     ],
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      3,
+      12
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      12
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      12
+     ]
+    ],
+    "answer": "DRUMHEADS",
+    "clue": "Beat the bosses? They'll take a beating",
+    "enum": "9",
+    "defs": [
+     "They'll take a beating"
+    ],
+    "kind": "cat",
+    "note": "DRUM (beat) + HEADS (bosses). Session 2's two skins.",
+    "theme": true
+   },
+   {
+    "id": "8D",
+    "n": 8,
+    "dir": "D",
+    "cells": [
+     [
+      0,
+      14
+     ],
+     [
+      1,
+      14
+     ],
+     [
+      2,
+      14
+     ],
+     [
+      3,
+      14
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      5,
+      14
+     ],
+     [
+      6,
+      14
+     ]
+    ],
+    "answer": "SKETCHY",
+    "clue": "Skit ending in parody is lacking detail",
+    "enum": "7",
+    "defs": [
+     "lacking detail"
+    ],
+    "kind": "cat",
+    "note": "SKETCH (skit) + Y (the ending of parody).",
+    "theme": false
+   },
+   {
+    "id": "9A",
+    "n": 9,
+    "dir": "A",
+    "cells": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "answer": "SANDPILES",
+    "clue": "Polish stacks? They topple in avalanches",
+    "enum": "9",
+    "defs": [
+     "They topple in avalanches"
+    ],
+    "kind": "cat",
+    "note": "SAND (polish) + PILES (stacks). Session 1 watched them topple.",
+    "theme": true
+   },
+   {
+    "id": "10A",
+    "n": 10,
+    "dir": "A",
+    "cells": [
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      11
+     ],
+     [
+      2,
+      12
+     ],
+     [
+      2,
+      13
+     ],
+     [
+      2,
+      14
+     ]
+    ],
+    "answer": "CHUTE",
+    "clue": "Slide about, shed energy",
+    "enum": "5",
+    "defs": [
+     "Slide"
+    ],
+    "kind": "cat",
+    "note": "C (circa, about) + HUT (shed) + E (energy).",
+    "theme": false
+   },
+   {
+    "id": "11A",
+    "n": 11,
+    "dir": "A",
+    "cells": [
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    "answer": "INCUR",
+    "clue": "Run up, at home with a mongrel",
+    "enum": "5",
+    "defs": [
+     "Run up"
+    ],
+    "kind": "cat",
+    "note": "IN (at home) + CUR (mongrel). You incur, or run up, a debt.",
+    "theme": false
+   },
+   {
+    "id": "12A",
+    "n": 12,
+    "dir": "A",
+    "cells": [
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      4,
+      14
+     ]
+    ],
+    "answer": "NEOLITHIC",
+    "clue": "Moving into Chile, like the first farmers",
+    "enum": "9",
+    "defs": [
+     "like the first farmers"
+    ],
+    "kind": "ana",
+    "note": "Anagram ('moving') of INTO CHILE.",
+    "theme": false
+   },
+   {
+    "id": "13A",
+    "n": 13,
+    "dir": "A",
+    "cells": [
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    "answer": "REGIONS",
+    "clue": "Ignores developing areas",
+    "enum": "7",
+    "defs": [
+     "areas"
+    ],
+    "kind": "ana",
+    "note": "Anagram ('developing') of IGNORES.",
+    "theme": false
+   },
+   {
+    "id": "14D",
+    "n": 14,
+    "dir": "D",
+    "cells": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      13,
+      2
+     ],
+     [
+      14,
+      2
+     ]
+    ],
+    "answer": "GRANDSIRE",
+    "clue": "Bell-ringers' method: excellent father",
+    "enum": "9",
+    "defs": [
+     "Bell-ringers' method"
+    ],
+    "kind": "cat",
+    "note": "GRAND (excellent) + SIRE (father). Session 4 rang a peal of Grandsire Triples.",
+    "theme": true
+   },
+   {
+    "id": "15A",
+    "n": 15,
+    "dir": "A",
+    "cells": [
+     [
+      6,
+      8
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      6,
+      13
+     ],
+     [
+      6,
+      14
+     ]
+    ],
+    "answer": "ECSTASY",
+    "clue": "Says \u201cetc\u201d, incoherently, in rapture",
+    "enum": "7",
+    "defs": [
+     "rapture"
+    ],
+    "kind": "ana",
+    "note": "Anagram ('incoherently') of SAYS ETC.",
+    "theme": false
+   },
+   {
+    "id": "16D",
+    "n": 16,
+    "dir": "D",
+    "cells": [
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      14,
+      10
+     ]
+    ],
+    "answer": "SLEEPLESS",
+    "clue": "Sees spell broken: wide awake",
+    "enum": "9",
+    "defs": [
+     "wide awake"
+    ],
+    "kind": "ana",
+    "note": "Anagram (\u2018broken\u2019) of SEES SPELL. A fairy tale in four words.",
+    "theme": false
+   },
+   {
+    "id": "17A",
+    "n": 17,
+    "dir": "A",
+    "cells": [
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      6
+     ]
+    ],
+    "answer": "ADAMANT",
+    "clue": "First man and worker, refusing to budge",
+    "enum": "7",
+    "defs": [
+     "refusing to budge"
+    ],
+    "kind": "cat",
+    "note": "ADAM (first man) + ANT (worker).",
+    "theme": false
+   },
+   {
+    "id": "17D",
+    "n": 17,
+    "dir": "D",
+    "cells": [
+     [
+      8,
+      0
+     ],
+     [
+      9,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      11,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      13,
+      0
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "answer": "ALMANAC",
+    "clue": "Yearbook: a learner chap with an account",
+    "enum": "7",
+    "defs": [
+     "Yearbook"
+    ],
+    "kind": "cat",
+    "note": "A + L (learner) + MAN (chap) + AC (account).",
+    "theme": false
+   },
+   {
+    "id": "18D",
+    "n": 18,
+    "dir": "D",
+    "cells": [
+     [
+      8,
+      6
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      6
+     ],
+     [
+      12,
+      6
+     ],
+     [
+      13,
+      6
+     ],
+     [
+      14,
+      6
+     ]
+    ],
+    "answer": "THIRSTY",
+    "clue": "Dry son enters thirty",
+    "enum": "7",
+    "defs": [
+     "Dry"
+    ],
+    "kind": "ins",
+    "note": "S (son) enters THIRTY.",
+    "theme": false
+   },
+   {
+    "id": "19A",
+    "n": 19,
+    "dir": "A",
+    "cells": [
+     [
+      8,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      8,
+      12
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      8,
+      14
+     ]
+    ],
+    "answer": "BLESSED",
+    "clue": "Fewer in bed? Lucky!",
+    "enum": "7",
+    "defs": [
+     "Lucky"
+    ],
+    "kind": "ins",
+    "note": "LESS (fewer) in BED.",
+    "theme": false
+   },
+   {
+    "id": "19D",
+    "n": 19,
+    "dir": "D",
+    "cells": [
+     [
+      8,
+      8
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      13,
+      8
+     ],
+     [
+      14,
+      8
+     ]
+    ],
+    "answer": "BONANZA",
+    "clue": "Book on endless soldier from down under? Windfall!",
+    "enum": "7",
+    "defs": [
+     "Windfall"
+    ],
+    "kind": "cat",
+    "note": "B (book) + ON + ANZA(c), an Anzac without his end.",
+    "theme": false
+   },
+   {
+    "id": "20D",
+    "n": 20,
+    "dir": "D",
+    "cells": [
+     [
+      8,
+      14
+     ],
+     [
+      9,
+      14
+     ],
+     [
+      10,
+      14
+     ],
+     [
+      11,
+      14
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      14,
+      14
+     ]
+    ],
+    "answer": "DESERVE",
+    "clue": "Merit badly severed",
+    "enum": "7",
+    "defs": [
+     "Merit"
+    ],
+    "kind": "ana",
+    "note": "Anagram ('badly') of SEVERED.",
+    "theme": false
+   },
+   {
+    "id": "21A",
+    "n": 21,
+    "dir": "A",
+    "cells": [
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      10,
+      3
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      10,
+      8
+     ]
+    ],
+    "answer": "MEDALLION",
+    "clue": "Award to king of the jungle? A big pendant",
+    "enum": "9",
+    "defs": [
+     "A big pendant"
+    ],
+    "kind": "cat",
+    "note": "MEDAL (award) next to LION (king of the jungle).",
+    "theme": false
+   },
+   {
+    "id": "22D",
+    "n": 22,
+    "dir": "D",
+    "cells": [
+     [
+      10,
+      4
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ]
+    ],
+    "answer": "LAYER",
+    "clue": "Coat for a hen",
+    "enum": "5",
+    "defs": [
+     "Coat",
+     "a hen"
+    ],
+    "kind": "dd",
+    "note": "Double definition: a coat of paint is a layer, and so is a hen that lays.",
+    "theme": false
+   },
+   {
+    "id": "23A",
+    "n": 23,
+    "dir": "A",
+    "cells": [
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      13
+     ],
+     [
+      10,
+      14
+     ]
+    ],
+    "answer": "PLOTS",
+    "clue": "Page with many storylines",
+    "enum": "5",
+    "defs": [
+     "storylines"
+    ],
+    "kind": "cat",
+    "note": "P (page) + LOTS (many).",
+    "theme": false
+   },
+   {
+    "id": "24D",
+    "n": 24,
+    "dir": "D",
+    "cells": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      14,
+      12
+     ]
+    ],
+    "answer": "OMEGA",
+    "clue": "The end: love, a gem returned",
+    "enum": "5",
+    "defs": [
+     "The end"
+    ],
+    "kind": "cat",
+    "note": "O (love, nil) + A GEM reversed. The ring goes back; the affair ends.",
+    "theme": false
+   },
+   {
+    "id": "25A",
+    "n": 25,
+    "dir": "A",
+    "cells": [
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      3
+     ],
+     [
+      12,
+      4
+     ]
+    ],
+    "answer": "NOISY",
+    "clue": "Refusal is unknown, but loud",
+    "enum": "5",
+    "defs": [
+     "loud"
+    ],
+    "kind": "cat",
+    "note": "NO (refusal) + IS + Y (an unknown, in algebra).",
+    "theme": false
+   },
+   {
+    "id": "26A",
+    "n": 26,
+    "dir": "A",
+    "cells": [
+     [
+      12,
+      6
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      12,
+      14
+     ]
+    ],
+    "answer": "SONNETEER",
+    "clue": "Poet's fourteen lines, with energy and hesitation",
+    "enum": "9",
+    "defs": [
+     "Poet"
+    ],
+    "kind": "cat",
+    "note": "SONNET (fourteen lines) + E (energy) + ER (hesitation). Session 3 was one.",
+    "theme": true
+   },
+   {
+    "id": "27A",
+    "n": 27,
+    "dir": "A",
+    "cells": [
+     [
+      14,
+      0
+     ],
+     [
+      14,
+      1
+     ],
+     [
+      14,
+      2
+     ],
+     [
+      14,
+      3
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      14,
+      6
+     ]
+    ],
+    "answer": "CLEARLY",
+    "clue": "Obviously found in unclear lyrics",
+    "enum": "7",
+    "defs": [
+     "Obviously"
+    ],
+    "kind": "hid",
+    "note": "Hidden in unCLEAR LYrics.",
+    "theme": false
+   },
+   {
+    "id": "28A",
+    "n": 28,
+    "dir": "A",
+    "cells": [
+     [
+      14,
+      8
+     ],
+     [
+      14,
+      9
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      14,
+      11
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      14,
+      14
+     ]
+    ],
+    "answer": "ASSUAGE",
+    "clue": "Sausage cooked to satisfy",
+    "enum": "7",
+    "defs": [
+     "satisfy"
+    ],
+    "kind": "ana",
+    "note": "Anagram ('cooked') of SAUSAGE. You assuage, or satisfy, a hunger.",
+    "theme": false
+   }
+  ]
+ },
+ "experiment": {
+  "slow": [
+   {
+    "label": "1A DEPOSIT",
+    "kind": "container",
+    "detail": "SI (Spanish 'yes') taken into DEPOT (store).",
+    "ok": true
+   },
+   {
+    "label": "5A DECADES",
+    "kind": "charade",
+    "detail": "ADES (fruit drinks) after DEC (December).",
+    "ok": true
+   },
+   {
+    "label": "9A SANDPILES",
+    "kind": "charade",
+    "detail": "SAND (polish) + PILES (stacks). Session 1 watched them topple.",
+    "ok": true
+   },
+   {
+    "label": "10A CHUTE",
+    "kind": "hidden word",
+    "detail": "Hidden in eaCH UTEnsil.",
+    "ok": true
+   },
+   {
+    "label": "11A INCUR",
+    "kind": "charade",
+    "detail": "IN (at home) + CUR (mongrel). You incur, or run up, a debt.",
+    "ok": true
+   },
+   {
+    "label": "12A NEOLITHIC",
+    "kind": "anagram",
+    "detail": "Anagram ('moving') of INTO CHILE.",
+    "ok": true
+   },
+   {
+    "label": "13A REGIONS",
+    "kind": "anagram",
+    "detail": "Anagram ('developing') of IGNORES.",
+    "ok": true
+   },
+   {
+    "label": "15A ECSTASY",
+    "kind": "anagram",
+    "detail": "Anagram ('incoherently') of SAYS ETC.",
+    "ok": true
+   },
+   {
+    "label": "17A ADAMANT",
+    "kind": "charade",
+    "detail": "ADAM (first man) + ANT (worker).",
+    "ok": true
+   },
+   {
+    "label": "19A BLESSED",
+    "kind": "container",
+    "detail": "LESS (fewer) in BED.",
+    "ok": true
+   },
+   {
+    "label": "21A MEDALLION",
+    "kind": "charade",
+    "detail": "MEDAL (award) next to LION (king of the jungle).",
+    "ok": true
+   },
+   {
+    "label": "23A PLOTS",
+    "kind": "charade",
+    "detail": "P (page) + LOTS (many).",
+    "ok": true
+   },
+   {
+    "label": "25A NOISY",
+    "kind": "charade",
+    "detail": "NO (refusal) + IS + Y (an unknown, in algebra).",
+    "ok": true
+   },
+   {
+    "label": "26A SONNETEER",
+    "kind": "charade",
+    "detail": "SONNET (fourteen lines) + E (energy) + ER (hesitation). Session 3 was one.",
+    "ok": true
+   },
+   {
+    "label": "27A CLEARLY",
+    "kind": "hidden word",
+    "detail": "Hidden in unCLEAR LYrics.",
+    "ok": true
+   },
+   {
+    "label": "28A ASSUAGE",
+    "kind": "anagram",
+    "detail": "Anagram ('cooked') of SAUSAGE. You assuage, or satisfy, a hunger.",
+    "ok": true
+   },
+   {
+    "label": "1D DOSSIER",
+    "kind": "container",
+    "detail": "DOSSER (tramp) keeps I (one) inside.",
+    "ok": true
+   },
+   {
+    "label": "2D PANIC",
+    "kind": "charade",
+    "detail": "PAN (slate, criticise) + IC (in charge).",
+    "ok": true
+   },
+   {
+    "label": "3D SUPERNOVA",
+    "kind": "charade",
+    "detail": "SUPER (great) + NOVA (new star); and the whole clue is the definition. Tycho called the supernova of 1572 'De nova stella', the new star.",
+    "ok": true
+   },
+   {
+    "label": "4D TALENTS",
+    "kind": "charade",
+    "detail": "TALE (story) + NT (books: the New Testament) + S (son).",
+    "ok": true
+   },
+   {
+    "label": "6D CACTI",
+    "kind": "hidden word",
+    "detail": "Hidden in comiC ACTIng.",
+    "ok": true
+   },
+   {
+    "label": "7D DRUMHEADS",
+    "kind": "charade",
+    "detail": "DRUM (beat) + HEADS (bosses). Session 2's two skins.",
+    "ok": true
+   },
+   {
+    "label": "8D SKETCHY",
+    "kind": "charade",
+    "detail": "SKETCH (skit) + Y (the ending of parody).",
+    "ok": true
+   },
+   {
+    "label": "14D GRANDSIRE",
+    "kind": "charade",
+    "detail": "GRAND (excellent) + SIRE (father). Session 4 rang a peal of Grandsire Triples.",
+    "ok": true
+   },
+   {
+    "label": "16D SLEEPLESS",
+    "kind": "charade",
+    "detail": "SLEEP (doze) + LESS.",
+    "ok": true
+   },
+   {
+    "label": "17D ALMANAC",
+    "kind": "charade",
+    "detail": "A + L (learner) + MAN (chap) + AC (account).",
+    "ok": true
+   },
+   {
+    "label": "18D THIRSTY",
+    "kind": "container",
+    "detail": "S (son) enters THIRTY.",
+    "ok": true
+   },
+   {
+    "label": "19D BONANZA",
+    "kind": "deletion",
+    "detail": "B (book) + ON + ANZA(c), an Anzac without his end.",
+    "ok": true
+   },
+   {
+    "label": "20D DESERVE",
+    "kind": "anagram",
+    "detail": "Anagram ('badly') of SEVERED.",
+    "ok": true
+   },
+   {
+    "label": "24D OMEGA",
+    "kind": "reversal",
+    "detail": "O (love, nil) + A GEM reversed. The ring goes back; the affair ends.",
+    "ok": true
+   }
+  ],
+  "slow_lesser": 155,
+  "fast": {
+   "anagram": [
+    {
+     "label": "listen = silent",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "dormitory = dirty room",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "astronomer = moon starer",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "the eyes = they see",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "conversation = voices rant on",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "eleven plus two = twelve plus one",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "funeral = real fun",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "schoolmaster = the classroom",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "desperation = a rope ends it",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "the morse code = here come dots",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "slot machines = cash lost in me",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "dormitories = dirty rooms",
+     "ok": false,
+     "round": 1,
+     "why": "dormitories has two Is and an E; dirty rooms has a Y"
+    },
+    {
+     "label": "evangelist = evil's agent",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "a gentleman = elegant man",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "the earthquakes = that queer shake",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "mother-in-law = woman hitler",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "astronomers = no more stars",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "butterfly = flutter by",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "santa = satan",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "admirer = married",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "lemon = melon",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "night = thing",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "parsley = players",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "recital = article",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "thicken = kitchen",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "dusty = study",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "integral = triangle",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "earnest = nearest",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "painters = pertains",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "hornets = shorten",
+     "ok": true,
+     "round": 2
+    }
+   ],
+   "reversal": [
+    {
+     "label": "stressed backwards is desserts",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "drawer backwards is reward",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "diaper backwards is repaid",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "stop backwards is pots",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "deliver backwards is reviled",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "evil backwards is live",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "star backwards is rats",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "regal backwards is lager",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "straw backwards is warts",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "sleep backwards is peels",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "denim backwards is mined",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "spool backwards is loops",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "keels backwards is sleek",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "strap backwards is parts",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "devil backwards is lived",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "sinned backwards is dennis",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "redraw backwards is warder",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "snoops backwards is spoons",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "bard backwards is drab",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "tuber backwards is rebut",
+     "ok": true,
+     "round": 2
+    }
+   ],
+   "counting": [
+    {
+     "label": "onomatopoeia has 12 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "antidisestablishmentarianism has 28 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "strengths has 9 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "rhythm has 6 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "queueing has 8 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "floccinaucinihilipilification has 29 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "uncopyrightable has 15 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "subdermatoglyphic has 17 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "supercalifragilisticexpialidocious has 34 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "honorificabilitudinitatibus has 27 letters",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "letter 3 of strawberry is r",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "letter 5 of necessary is s",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "letter 7 of mississippi is s",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "letter 4 of accommodate is o",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "letter 2 of rhythm is h",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "parallelogram has 13 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "kaleidoscope has 12 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "sonneteer has 9 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "chrysanthemum has 13 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "bureaucracy has 11 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "acknowledgement has 15 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "onomatopoeic has 12 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "hippopotamus has 12 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "quintessential has 14 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "mediterranean has 13 letters",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "strawberry has 3 r\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "bookkeeper has 3 e\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "mississippi has 4 s\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "committee has 2 t\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "assassination has 4 s\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "parallelogram has 3 l\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "onomatopoeia has 4 o\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "tennessee has 4 e\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "abracadabra has 5 a\u2019s",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "unconventional has 4 n\u2019s",
+     "ok": true,
+     "round": 2
+    }
+   ],
+   "hidden-within": [
+    {
+     "label": "hen in \u201cwhen ever\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "ape in \u201cgrape\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "eel in \u201cfeel\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "ant in \u201cpleasant\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "yak in \u201ckayak\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "asp in \u201cclasp\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "rat in \u201cpirate\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "lion in \u201cmillion owners\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "harp in \u201cthe sharp edge\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "lute in \u201cabsolute nonsense\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "horn in \u201cthe thorny path\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "bell in \u201ca bell\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "viola in \u201cenvious violation\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "cello in \u201cMarcello\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "reed in \u201cfreed\u201d",
+     "ok": true,
+     "round": 2
+    }
+   ],
+   "hidden-across": [
+    {
+     "label": "bear in \u201cthe zebra roams\u201d",
+     "ok": false,
+     "round": 1,
+     "why": "the letters are there as zEBRA: E-B-R-A"
+    },
+    {
+     "label": "owl in \u201ca low light\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "cat in \u201cmagic attic\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "emu in \u201cthe museum\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "gnu in \u201cbeing nuts\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "toad in \u201cphoto adds\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "mole in \u201chome lesson\u201d",
+     "ok": false,
+     "round": 1,
+     "why": "the letters are there as hOMElesson: O-M-E-L"
+    },
+    {
+     "label": "seal in \u201cthese alerts\u201d",
+     "ok": true,
+     "round": 1
+    },
+    {
+     "label": "oven in \u201cmove nearer\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "oboe in \u201chobo ever\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "drum in \u201codd rumour\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "tuba in \u201ccut back\u201d",
+     "ok": false,
+     "round": 2,
+     "why": "the letters are there as cUTBAck: U-T-B-A"
+    },
+    {
+     "label": "sitar in \u201cvisit Arles\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "organ in \u201cdoor ganged\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "fife in \u201cif I feel\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "gong in \u201cgo nguyen\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "piano in \u201cOlympia, no\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "banjo in \u201cturban joke\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "flute in \u201cflu teaching\u201d",
+     "ok": true,
+     "round": 2
+    },
+    {
+     "label": "lyre in \u201cearly record\u201d",
+     "ok": true,
+     "round": 2
+    }
+   ]
+  }
+ }
+}
