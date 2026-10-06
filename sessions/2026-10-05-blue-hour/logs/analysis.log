@@ -1,0 +1,103 @@
+ozone 300 DU vs none: share of blueness (Lange metric / signed)
+   sun +10.0  r  0.175  signed  0.176
+   sun  +5.0  r  0.319  signed  0.322
+   sun  +0.0  r  0.687  signed  0.706
+   sun  -1.0  r  0.781  signed  0.808
+   sun  -2.0  r  0.862  signed  0.895
+   sun  -3.0  r  0.915  signed  0.950
+   sun  -4.0  r  0.927  signed  0.948
+   sun  -6.0  r  0.887  signed  0.901
+   sun  -8.0  r  0.910  signed  1.089
+   sun -10.0  r  0.894  signed  1.105
+   sun -12.0  r  0.989  signed  1.005
+   sun -14.0  r  0.977  signed  1.021
+ozone 100 DU vs none: share of blueness (Lange metric / signed)
+   sun +10.0  r  0.067  signed  0.067
+   sun  +5.0  r  0.135  signed  0.135
+   sun  +0.0  r  0.422  signed  0.435
+   sun  -1.0  r  0.542  signed  0.568
+   sun  -2.0  r  0.674  signed  0.720
+   sun  -3.0  r  0.782  signed  0.846
+   sun  -4.0  r  0.814  signed  0.854
+   sun  -6.0  r  0.738  signed  0.758
+   sun  -8.0  r  0.707  signed  1.281
+   sun -10.0  r  0.656  signed  1.343
+   sun -12.0  r  0.971  signed  1.010
+   sun -14.0  r  0.945  signed  1.049
+ozone 500 DU vs none: share of blueness (Lange metric / signed)
+   sun +10.0  r  0.256  signed  0.257
+   sun  +5.0  r  0.434  signed  0.438
+   sun  +0.0  r  0.780  signed  0.799
+   sun  -1.0  r  0.851  signed  0.874
+   sun  -2.0  r  0.908  signed  0.934
+   sun  -3.0  r  0.943  signed  0.969
+   sun  -4.0  r  0.950  signed  0.967
+   sun  -6.0  r  0.919  signed  0.932
+   sun  -8.0  r  0.939  signed  1.061
+   sun -10.0  r  0.927  signed  1.072
+   sun -12.0  r  0.992  signed  1.004
+   sun -14.0  r  0.983  signed  1.016
+o3_300
+   sun +10.0  Y       843  xy [0.25157, 0.26101]  CCT   17398  MS 0.33  #94b4ea
+   sun  +0.0  Y       146  xy [0.26317, 0.27481]  CCT   13113  MS 0.31  #a3beea
+   sun  -3.0  Y        17  xy [0.25557, 0.25779]  CCT   17274  MS 0.35  #9bb1ea
+   sun  -6.0  Y     0.528  xy [0.23471, 0.2339]  CCT   37460  MS 0.61  #7fa2ea
+   sun  -9.0  Y    0.0184  xy [0.23404, 0.22428]  CCT   53141  MS 0.99  #819bea
+   sun -12.0  Y   0.00107  xy [0.22077, 0.21033]  CCT  150755  MS 1.00  #6e93ea
+o3_0
+   sun +10.0  Y       955  xy [0.26374, 0.27626]  CCT   12870  MS 0.33  #a4bfea
+   sun  +0.0  Y       225  xy [0.30642, 0.32372]  CCT    6910  MS 0.31  #e0e5ea
+   sun  -3.0  Y      33.9  xy [0.32426, 0.33485]  CCT    5884  MS 0.35  #eadfd9
+   sun  -6.0  Y      1.21  xy [0.3181, 0.32895]  CCT    6217  MS 0.64  #eae2e2
+   sun  -9.0  Y    0.0554  xy [0.34464, 0.34372]  CCT    4997  MS 0.99  #eacdc0
+   sun -12.0  Y   0.00337  xy [0.33263, 0.33506]  CCT    5492  MS 1.00  #ead4cf
+o3_100
+   sun +10.0  Y       918  xy [0.25957, 0.27111]  CCT   14129  MS 0.33  #9ebbea
+   sun  +0.0  Y       194  xy [0.29121, 0.30736]  CCT    8224  MS 0.31  #cad6ea
+   sun  -3.0  Y      26.5  xy [0.29907, 0.30878]  CCT    7609  MS 0.35  #d5d7ea
+   sun  -6.0  Y     0.892  xy [0.2859, 0.29578]  CCT    9033  MS 0.63  #c3cdea
+   sun  -9.0  Y    0.0365  xy [0.30164, 0.30228]  CCT    7546  MS 0.99  #d9d1ea
+   sun -12.0  Y   0.00217  xy [0.28671, 0.28973]  CCT    9200  MS 1.00  #c4c7ea
+o3_500
+   sun +10.0  Y       778  xy [0.2442, 0.25155]  CCT   21989  MS 0.33  #8aaeea
+   sun  +0.0  Y       112  xy [0.23911, 0.24381]  CCT   27331  MS 0.32  #83a9ea
+   sun  -3.0  Y      11.7  xy [0.22363, 0.21397]  CCT  109533  MS 0.35  #7296ea
+   sun  -6.0  Y     0.346  xy [0.20268, 0.18607]  CCT 50624897726  MS 0.58  #5385ea
+   sun  -9.0  Y    0.0109  xy [0.1958, 0.16794]  CCT  -40610  MS 0.99  #4d79ea
+   sun -12.0  Y  0.000636  xy [0.18593, 0.15452]  CCT    4802  MS 1.00  #3b71ea
+o3_0_aer_0.04
+   sun  +0.0  Y       226  xy [0.30711, 0.32435]  CCT    6862  MS 0.25  #e1e5ea
+   sun  -3.0  Y      32.3  xy [0.31981, 0.3301]  CCT    6122  MS 0.26  #eae1e0
+   sun  -6.0  Y      1.03  xy [0.30194, 0.31359]  CCT    7326  MS 0.51  #d9dbea
+   sun  -9.0  Y    0.0392  xy [0.30879, 0.31671]  CCT    6844  MS 0.99  #e3deea
+   sun -12.0  Y   0.00284  xy [0.3031, 0.31331]  CCT    7253  MS 1.00  #dbdbea
+o3_300_aer_0.04
+   sun  +0.0  Y       147  xy [0.26398, 0.27546]  CCT   12922  MS 0.25  #a4beea
+   sun  -3.0  Y      16.4  xy [0.25337, 0.2537]  CCT   18846  MS 0.26  #98aeea
+   sun  -6.0  Y     0.469  xy [0.22587, 0.22222]  CCT   66442  MS 0.49  #739bea
+   sun  -9.0  Y    0.0144  xy [0.21443, 0.20386]  CCT  323095  MS 0.99  #6490ea
+   sun -12.0  Y  0.000968  xy [0.2051, 0.19176]  CCT 6095673  MS 1.00  #5689ea
+o3_100_aer_0.04
+   sun  +0.0  Y       195  xy [0.292, 0.30808]  CCT    8145  MS 0.25  #cbd7ea
+   sun  -3.0  Y      25.3  xy [0.29518, 0.30392]  CCT    8004  MS 0.26  #d0d3ea
+   sun  -6.0  Y     0.771  xy [0.27207, 0.28098]  CCT   11327  MS 0.50  #b0c2ea
+   sun  -9.0  Y    0.0274  xy [0.26844, 0.27434]  CCT   12401  MS 0.99  #abbdea
+   sun -12.0  Y   0.00198  xy [0.24441, 0.23876]  CCT   28482  MS 1.00  #8da4ea
+o3_500_aer_0.04
+   sun  +0.0  Y       113  xy [0.2398, 0.24419]  CCT   26855  MS 0.25  #85a9ea
+   sun  -3.0  Y      11.3  xy [0.22251, 0.21041]  CCT  145229  MS 0.27  #7193ea
+   sun  -6.0  Y     0.315  xy [0.1972, 0.17708]  CCT -915841  MS 0.48  #4b80ea
+   sun  -9.0  Y   0.00894  xy [0.18383, 0.15152]  CCT    5625  MS 0.99  #3770ea
+   sun -12.0  Y  0.000605  xy [0.17768, 0.14057]  CCT    5441  MS 1.00  #2a69ea
+o3_0_aer_0.25
+   sun  +0.0  Y       232  xy [0.30393, 0.32219]  CCT    7078  MS 0.46  #dce3ea
+   sun  -3.0  Y      35.3  xy [0.32212, 0.33515]  CCT    5987  MS 0.49  #eae2dc
+   sun  -6.0  Y      1.27  xy [0.31712, 0.32908]  CCT    6268  MS 0.72  #eae3e3
+   sun  -9.0  Y    0.0565  xy [0.33969, 0.34498]  CCT    5199  MS 0.99  #ead4c5
+   sun -12.0  Y   0.00323  xy [0.32996, 0.33417]  CCT    5615  MS 1.00  #ead7d2
+o3_300_aer_0.25
+   sun  +0.0  Y       150  xy [0.26036, 0.27243]  CCT   13827  MS 0.46  #9fbcea
+   sun  -3.0  Y      17.6  xy [0.25244, 0.25715]  CCT   18135  MS 0.49  #96b1ea
+   sun  -6.0  Y     0.555  xy [0.23331, 0.23464]  CCT   37403  MS 0.69  #7ca3ea
+   sun  -9.0  Y    0.0193  xy [0.2258, 0.21984]  CCT   74758  MS 0.99  #7499ea
+   sun -12.0  Y   0.00115  xy [0.21025, 0.20018]  CCT  588721  MS 1.00  #5d8eea

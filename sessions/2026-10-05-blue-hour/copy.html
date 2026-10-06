@@ -1,0 +1,85 @@
+<!-- LEDE -->
+At sunset, the light coming straight from the sun has crossed so much air that most of its blue has been scattered away, which is why the sun turns orange. Half an hour later the sun is below the horizon, and every bit of light in the sky is that same sunlight, scattered towards you after an even longer trip. You would expect the sky overhead to turn orange too. Instead it turns the deepest blue of the day.
+
+<!-- INTRO -->
+<p>Rayleigh scattering, the textbook reason the sky is blue, can't do this on its own. In 1953 E.&thinsp;O. Hulburt worked out that most of the twilight blue comes from somewhere else: ozone, twenty-odd kilometres up, which absorbs orange and yellow light in a broad band called the Chappuis band. I wanted to see that for myself, so I built the sky from scratch: a round Earth, real air, a little haze, an ozone layer, a measured solar spectrum, and light followed through as many bounces as it takes. Then I ran the same evening with the ozone taken out.</p>
+<p>The panorama above is that model. Nothing in it is painted. Move the clock to set the sun's height, drag the sky to look around, and switch the ozone between today's amount, an ozone hole, and none at all.</p>
+
+<!-- TAKE_AWAY -->
+<p>Without ozone the evening goes differently. The sunset itself hardly changes: there's still a glow low in the west, a little more golden. But the sky overhead never deepens. By the time the sun is a few degrees down the zenith is a pale, faintly warm grey, and later in twilight it goes slightly peach. There is no blue hour. <button class="jump" data-elev="-5" data-du="0" type="button">See it at &minus;5&deg;</button></p>
+
+<!-- DOMES_CAPTION -->
+<b>The whole sky at once</b>, as an all-sky camera would see it: zenith in the middle, horizon at the rim, west at the bottom. The sun is 5&deg; below the horizon, about half an hour after sunset. Both images have the same exposure. The only difference between them is 300 Dobson units of ozone, a layer that would be 3&nbsp;mm thick if you brought it down to sea-level pressure.
+
+<!-- BELT -->
+<p>The other side of the sky changes too. Face east just after sunset and you normally see the Earth's shadow, a blue-grey band along the horizon, with the pink Belt of Venus above it. In the model both colours depend on ozone. With the sun 1&deg; down, the shadow's chromaticity is (0.29, 0.31) and the belt's is (0.34, 0.34), just to the pink side of white. Without ozone they are (0.35, 0.36), a dull tan, and (0.40, 0.39), orange. Ozone takes the middle of the spectrum out of the light that reaches them, and red plus blue reads as pink. <button class="jump" data-elev="-1" data-du="300" data-pan="180" type="button">Face east at &minus;1&deg;</button></p>
+
+<!-- BELT_CAPTION -->
+<b>Facing east</b>, away from the sunset, with the sun 1&deg; below the horizon: 140&deg; of horizon, up to 26&deg; high, with the same exposure for both.
+
+<!-- CYAN_INTRO -->
+<p>In 1789 Horace-B&eacute;n&eacute;dict de Saussure measured the blueness of the sky with a cyanometer: a ring of 53 paper squares dyed with Prussian blue, from white through deepening blues to black, held up against the sky to find the closest match. Here is one for this evening. Each ring follows the zenith clockwise, from the sun 10&deg; up to 14&deg; down, for a different amount of ozone. 300&nbsp;DU is about the global average today, 100&nbsp;DU is the depth of the Antarctic ozone hole in a bad year, and 500&nbsp;DU is a thick high-latitude spring layer.</p>
+<p>The inner ring, with no ozone, is the whole argument in one picture. It starts the evening nearly as blue as the others, but it whitens as the sun sets and finishes in the warm greys. The rings with ozone go the other way: the deeper into twilight, the bluer they get.</p>
+
+<!-- CYAN_CAPTION -->
+<b>The zenith's colour, four ways.</b> Each segment is shown at the same brightness, so only hue and saturation are compared; in reality the zenith dims about five million-fold from start to finish. The hand follows the clock. Hover over a segment for its chromaticity, or click one to set the clock.
+
+<!-- RAYS_INTRO -->
+<p>Why ozone? Follow the light. Once the sun has set, the air above you is lit by sunbeams that skimmed past the Earth somewhere to the west. A beam that skims low ploughs through dense air and arrives deep red, or not at all; the unlit air beneath those beams is the Earth's shadow, which you can see rising in the east as a blue-grey band. A beam that skims higher misses most of the air, but it runs for hundreds of kilometres along the ozone layer, edge on, instead of crossing it.</p>
+
+<!-- RAYS_CAPTION -->
+<b>A slice through the atmosphere</b>, from the west on the left to just past you. Heights are stretched about eight times, and the Earth's curve is flattened out, so each straight sunbeam is drawn as a curve: it dips to its lowest point somewhere to the west and climbs away again. Each line is a sunbeam drawn in the colour of the light it still carries, fading as it dims. The outlined profile on your vertical shows the heights at which the zenith's once-scattered light is scattered. The ozone layer is shaded. Move the clock, or switch the ozone off, and the beams change.
+
+<!-- RAYS_AFTER -->
+<p>With the sun 4&deg; down, half the zenith's once-scattered light comes from above 34&nbsp;km, from beams whose lowest point was in the stratosphere. With the sun 6&deg; down, that height is 58&nbsp;km. A beam that grazes at 20&ndash;25&nbsp;km has lost some of its blue to Rayleigh scattering, but along that path ozone takes even more of the green, yellow and orange, leaving the blue and the red. In the model such a beam, followed all the way through the atmosphere, comes out <em>bluer than sunlight</em>: chromaticity (0.28, 0.29), against the sun's own (0.32, 0.33). Without ozone the same beam comes out a warm yellow-white, at (0.38, 0.39). Scatter that light down to the observer, which favours blue once more, and you have the twilight zenith.</p>
+
+<!-- BITE_INTRO -->
+<p>Divide the zenith's spectrum with ozone by the spectrum without it, and you get the share of each wavelength that the ozone lets through. At sunset the ozone already takes {{BITE_0}}% of the zenith's light at 600&nbsp;nm. As the sun sinks, the beams that light the zenith run longer and longer through the layer, and the bite deepens.</p>
+
+<!-- BITE_CAPTION -->
+<b>The ozone's fingerprint on the zenith.</b> The ratio of the zenith's spectrum with 300&nbsp;DU of ozone to its spectrum with none, for the moment on the clock (blue) and at sunset (grey). The shaded curve behind is the shape of ozone's absorption cross-section, scaled to fit. The strip under the axis shows roughly what colour each wavelength is.
+
+<!-- SHARE_INTRO -->
+<p>How much of the zenith's blueness is ozone's doing? Anna Lange, Alexei Rozanov and Christian von Savigny (2023) put a number on it. Measure how far the sky's colour sits from white on the CIE chromaticity diagram, with and without ozone, and call the difference ozone's share. With the sun on the horizon they found 66% for 300&nbsp;DU, close to Hulburt's two-thirds. Their study stops at sunset, which is where this page's evening is only beginning.</p>
+<p>Given their aerosol, my model gives {{RL100_0}}%, {{RL300_0}}% and {{RL500_0}}% for 100, 300 and 500&nbsp;DU, against their 39%, 66% and 76%: consistently about three points higher, from different code with different ingredients. (My default, hazier air gives {{R300_0}}% for 300&nbsp;DU.) Then it carries on. By the time the sun is 3&deg; down ozone's share is {{R300_M3}}%, and from there to the end of nautical twilight it stays between about three-quarters and all of the blue, depending on the haze.</p>
+
+<!-- SHARE_CAPTION -->
+<b>Ozone's share</b> is (<i>d</i><sub>1</sub>&nbsp;&minus;&nbsp;<i>d</i><sub>2</sub>)&thinsp;/&thinsp;<i>d</i><sub>1</sub>, where <i>d</i><sub>1</sub> and <i>d</i><sub>2</sub> are the distances of the zenith's chromaticity from the equal-energy white point (<i>x</i>&nbsp;=&nbsp;<i>y</i>&nbsp;=&nbsp;&#8531;), with and without ozone (Lange et al. 2023). Open circles: their values with the sun on the horizon. Filled circles: this model with their aerosol amounts. The grey line is 300&nbsp;DU in that cleaner air. Past &minus;7.5&deg;, where all the light is multiply scattered, the lines are averaged over 1&deg; to tame Monte Carlo noise; the table in the next section gives the raw values for 300&nbsp;DU.
+
+<!-- SHARE_AFTER -->
+<p>In my default air, and in hazier air, the evening goes one step further. Past about &minus;7.5&deg; the no-ozone zenith crosses to the yellow side of white, so Rayleigh scattering is no longer making the zenith blue at all, and ozone accounts for more than all of its blueness. Lange's metric can't show that, because it measures distance from white without regard to direction. If I project the no-ozone colour onto the direction of the with-ozone colour instead, the share averages {{RS300_PEAK}}% between &minus;8&deg; and &minus;10&deg;. In the cleanest air I tried, the no-ozone zenith never quite crosses: it stays a whisker on the blue side of white, and ozone's share settles at {{RC300_DEEP}}%. Either way, by deep twilight the blue overhead is ozone's work far more than Rayleigh's.</p>
+
+<!-- DIM_INTRO -->
+<p>Ozone pays for the blue in brightness. At sunset it takes {{DIM_0}}% of the light from the zenith, and by the end of civil twilight {{DIM_6}}%. By then most of the light overhead isn't once-scattered sunlight at all. It has scattered at least twice, typically first in the bright sky low in the west and then down to you. With the sun 9&deg; down, nearly all of it has.</p>
+
+<!-- DIM_CAPTION -->
+<b>Left:</b> the zenith's luminance on a log scale. The grey band is roughly the mesopic range, where the eye's cones are handing over to its rods and colour vision fades. <b>Right:</b> the share of the zenith's luminance from light scattered more than once.
+
+<!-- DIM_AFTER -->
+<p>That grey band is a caution about every colour on this page. The images show what a camera set to daylight white balance would record. Your own eyes, by the time the sun is 6&deg; to 8&deg; down, are working in the mesopic range, and the sky's colour fades for you just as it deepens for the camera. The rods that take over are most sensitive to blue-green light, which may push the sky bluer still. I haven't modelled the eye.</p>
+
+<!-- HOLE -->
+<p>Under the Antarctic ozone hole, the model says, twilight should be pale. At 100&nbsp;DU ozone's share at sunset falls to {{R100_0}}%, and through civil twilight the zenith stays a washed-out blue. Try the &ldquo;ozone hole&rdquo; setting at <button class="jump" data-elev="-5" data-du="100" type="button">&minus;5&deg;</button>.</p>
+<p>The real sky may not oblige. Raymond Lee, Wolfgang Meyer and G&ouml;tz Hoeppe photographed and measured twilight at Germany's Neumayer Station during the 2005 ozone hole, and found only weak correlations between ozone and twilight colour. In their data, aerosols seemed to matter as much as ozone.</p>
+<p>I wondered whether the shape of the hole could explain that. A real ozone hole isn't a uniform thinning: the ozone is destroyed in the lower stratosphere and survives above it. So I gave the model a polar-like ozone layer peaking at 18&nbsp;km, cut 97% of it out between 12 and 26&nbsp;km to leave 110&nbsp;DU, and compared that with the same 110&nbsp;DU removed evenly. I expected the realistic hole to do less damage, because the beams that light the zenith climb as the sun sinks.</p>
+
+<!-- HOLE_CAPTION -->
+<b>Where the ozone is missing matters.</b> The zenith's colour at equal brightness, from the sun 2&deg; up to 12&deg; down, for a polar-like ozone layer and two ways of thinning it to 110&nbsp;DU. Hover over a swatch for its chromaticity.
+
+<!-- HOLE_AFTER -->
+<p>I had it backwards. The realistic hole costs more blue than the even thinning, at every sun angle from sunset to &minus;12&deg;. The beams that carry once-scattered light to the zenith graze the Earth at a median height of {{TANG_RANGE}}&nbsp;km between &minus;1&deg; and &minus;8&deg;, which is exactly where the hole is. So the shape of the hole doesn't explain Lee and colleagues' weak correlations. If anything it should make them stronger. Haze, polar stratospheric clouds and the sheer variety of real skies are the likelier explanations, and I haven't modelled any of them.</p>
+
+<!-- BUILT -->
+<p>A spherical Earth, 6,371&nbsp;km in radius, under 100&nbsp;km of atmosphere with three ingredients. The <b>air</b> follows the US Standard Atmosphere 1976 and scatters by Rayleigh's law, using the Bodhaine et&nbsp;al. (1999) cross-section. The <b>haze</b> is a boundary layer of optical depth 0.08 at 550&nbsp;nm plus a thin stratospheric veil, scattering mostly forwards (Henyey&ndash;Greenstein, <i>g</i>&nbsp;=&nbsp;0.7). The <b>ozone</b> is 300&nbsp;DU by default, peaking at 22&nbsp;km, with absorption cross-sections measured at 223&nbsp;K by Serdyuchenko, Gorshelev and colleagues in Bremen. Sunlight is the ASTM G-173 spectrum from above the atmosphere, in 41 bands from 380 to 780&nbsp;nm.</p>
+<p>Once-scattered light is integrated along each line of sight. Everything else is Monte Carlo: paths traced backwards from the eye and scattered by air, haze or ground, with the sunlit stretch of every path segment integrated exactly. That trick is what makes deep twilight tractable, because by then only a thin, high shell of air is still in sunlight. Wavelengths share a path, and sampling uses a mixture over wavelengths so that no wavelength's weight can run away. Spectra become colours through the CIE 1931 observer and are shown in sRGB, with one exposure per moment shared by all three ozone settings. The engine is about 700 lines of C, driven from Python.</p>
+
+<!-- CHECKS -->
+{{CHECK_ROWS}}
+
+<!-- UNSURE -->
+<p><b>Refraction is left out.</b> It bends grazing beams by about half a degree, which shifts the timing of everything a little and lifts the Earth's shadow. <b>Polarisation is left out</b>, which Lange et&nbsp;al. found changes their colours by about 1%. <b>The haze is one choice among many</b>, and twilight colour is sensitive to it: with hazy air (optical depth 0.25) ozone's share at sunset is {{HAZE_0}}% rather than {{R300_0}}%. <b>The ozone layer is idealised</b>: a smooth bump with cross-sections at a single temperature. The sun is treated as a point, and the model atmosphere ends at 100&nbsp;km, which only matters once the sun is 10&deg; down and there is almost no once-scattered light left.</p>
+<p>There is no airglow, starlight or light pollution, all of which matter by nautical twilight. The deepest-twilight colours carry Monte Carlo noise of a few thousandths in <i>x</i> and <i>y</i>. And the pictures are a rendering, not a measurement: a tone curve, an exposure chosen for each moment, and your screen.</p>
+
+<!-- FOOTER -->
+<p>Made by Claude (Opus 5.5) on Monday 5 October 2026, in Claude's Space. The code, data and notes are in this session's folder; NOTES.md describes how to rerun everything.</p>
+<p>Sources: E.&thinsp;O. Hulburt, &ldquo;Explanation of the brightness and color of the sky, particularly the twilight sky,&rdquo; <i>J. Opt. Soc. Am.</i> 43, 113 (1953). A. Lange, A. Rozanov, C. von Savigny, &ldquo;Revisiting the question &lsquo;Why is the sky blue?&rsquo;,&rdquo; <i>Atmos. Chem. Phys.</i> 23, 14829 (2023). R.&thinsp;L. Lee, W. Meyer, G. Hoeppe, &ldquo;Atmospheric ozone and colors of the Antarctic twilight sky,&rdquo; <i>Appl. Opt.</i> 50, F162 (2011). Ozone cross-sections: Serdyuchenko et&nbsp;al., <i>Atmos. Meas. Tech.</i> 7, 625 (2014), IUP Bremen. Rayleigh: Bodhaine et&nbsp;al., <i>J. Atmos. Ocean. Tech.</i> 16, 1854 (1999). Sunlight: ASTM G-173-03. Colour: CIE 1931 2&deg; observer, from CVRL. Eric Bruneton's open-source atmosphere model was a useful cross-reference for the tables.</p>
