@@ -1,0 +1,87 @@
+4. Bryansk, Bryansk Oblast, Russia
+10. Sokoto, Nigeria
+16. Saskatoon, Saskatchewan, Canada
+22. Norristown, Pennsylvania, United States
+28. Jaboatão dos Guararapes, Pernambuco, Brazil
+34. Auckland, New Zealand
+40. Jinan, Shandong, China
+46. Taipei, Taiwan, Taiwan
+52. Mumbai, Maharashtra, India
+58. Luhansk, Ukraine
+64. Mérida, Yucatán, Mexico
+70. Fredericksburg, Virginia, United States
+76. Lamía, Central Greece, Greece
+82. Johannesburg, Gauteng, South Africa
+88. Al Khuşūş, Qalyubia, Egypt
+94. Copenhagen, Capital Region, Denmark
+100. Chitungwiza, Harare, Zimbabwe
+106. Bogotá, Bogota D.C., Colombia
+112. Cumaná, Sucre, Venezuela
+118. São Gonçalo do Amarante, Ceará, Brazil
+124. Panna, Madhya Pradesh, India
+130. Maitland, New South Wales, Australia
+136. Yenagoa, Bayelsa State, Nigeria
+142. Bucharest, Romania
+148. Bydgoszcz, Kujawsko-Pomorskie, Poland
+154. Karlsruhe, Baden-Wurttemberg, Germany
+160. Porto Alegre, Rio Grande do Sul, Brazil
+166. Camayenne, Conakry, Guinea
+172. El Cajon, California, United States
+178. Beloretsk, Bashkortostan Republic, Russia
+184. Fortaleza, Ceará, Brazil
+190. San Mauro Torinese, Piedmont, Italy
+196. Al Wāsiţah, Faiyum, Egypt
+202. Chelyabinsk, Russia
+208. Lusail, Al Daayen, Qatar
+214. Amroha, Uttar Pradesh, India
+220. Ash-Shaykh Zāyid, Giza, Egypt
+226. Chinju, Gyeongsangnam-do, South Korea
+232. Jakarta, Indonesia
+238. Loudi, Hunan, China
+244. Balaklava, Sevastopol City, Ukraine
+250. Brescia, Lombardy, Italy
+256. Ambarnath, Maharashtra, India
+262. Kharkiv, Ukraine
+268. Shenyang, Liaoning, China
+274. Jihlava, Vysocina, Czechia
+280. Mindouli, Likouala, Republic of the Congo
+286. Nelson, Nelson Region, New Zealand
+292. Adelaide Hills, South Australia, Australia
+298. San Antonio de Los Altos, Miranda, Venezuela
+304. Gouda, South Holland, The Netherlands
+310. Placentia, California, United States
+316. Zhengzhou, Henan, China
+322. Cheboksary, Chuvash Republic, Russia
+328. Voronezh, Voronezh Oblast, Russia
+334. Fountainebleau, Florida, United States
+340. Baghdad, Iraq
+346. Patiriyat, Kerala, India
+352. Zhangjiagang, Jiangsu, China
+358. Sfax, Sfax Governorate, Tunisia
+364. São Lourenço, Guangdong, China
+370. Itaguaí, Rio de Janeiro, Brazil
+376. Floridablanca, Santander Department, Colombia
+382. Morristown, Tennessee, United States
+388. Logan City, Queensland, Australia
+394. Tongshan, Jiangsu, China
+400. Ufa, Bashkortostan Republic, Russia
+406. Lake Mary, Florida, United States
+412. Guía de Isora, Canary Islands, Spain
+418. Shenzhen, Guangdong, China
+424. Kokrajhar, Assam, India
+430. Brussels, Brussels Capital, Belgium
+436. Le Port, Reunion, Reunion
+442. Wadi Halfa, Northern State, Sudan
+448. Witten, North Rhine-Westphalia, Germany
+454. Tehran, Iran
+460. Tucacas, Falcón, Venezuela
+466. Apac, Northern Region, Uganda
+472. Sanaur, Punjab, India
+478. Villagrán, Guanajuato, Mexico
+484. Oued Lill, Manouba, Tunisia
+490. Toronto, Ontario, Canada
+496. Ananindeua, Pará, Brazil
+502. Suva, Central, Fiji
+508. Codajás, Amazonas, Brazil
+514. Massy, Île-de-France, France
+520. Nadi, Western, Fiji

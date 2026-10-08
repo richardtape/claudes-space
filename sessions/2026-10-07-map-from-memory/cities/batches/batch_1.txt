@@ -1,0 +1,87 @@
+1. Conselheiro Lafaiete, Minas Gerais, Brazil
+7. San Miguel Coatlinchán, México, Mexico
+13. Verona, Veneto, Italy
+19. Torreón, Coahuila, Mexico
+25. Coyoacán, Mexico City, Mexico
+31. Pawtucket, Rhode Island, United States
+37. Xinzhou, Shanxi, China
+43. Pikine, Dakar, Senegal
+49. Guigang, Guangxi, China
+55. Chingola, Copperbelt, Zambia
+61. Marāgheh, Razavi Khorasan, Iran
+67. La Libertad, Guayas, Ecuador
+73. Luoyang, Henan, China
+79. Hanoi, Vietnam
+85. Sirjan, Kerman, Iran
+91. Paris 13 Gobelins, Île-de-France, France
+97. Bordeaux, New Aquitaine, France
+103. Lusaka, Lusaka Province, Zambia
+109. Heist-op-den-Berg, Flanders, Belgium
+115. Fiditi, Oyo State, Nigeria
+121. Dêqên, Tibet, China
+127. Lagos, Nigeria
+133. Rotorua, Bay of Plenty, New Zealand
+139. Istanbul, Turkey
+145. Dunkirk, Hauts-de-France, France
+151. Orange, New South Wales, Australia
+157. Shijiazhuang, Hebei, China
+163. Upata, Bolívar, Venezuela
+169. Uberaba, Minas Gerais, Brazil
+175. Matola, Maputo Province, Mozambique
+181. San Antonio, Texas, United States
+187. Ciudad López Mateos, México, Mexico
+193. Ho Chi Minh City, Ho Chi Minh City (HCMC), Vietnam
+199. Hastings, Hawke's Bay Region, New Zealand
+205. South Portland Gardens, Maine, United States
+211. Deoria, Uttar Pradesh, India
+217. Lüliang, Shanxi, China
+223. Hacienda Heights, California, United States
+229. Picos, Piauí, Brazil
+235. Villamaría, Caldas Department, Colombia
+241. Oregon City, Oregon, United States
+247. Traralgon, Victoria, Australia
+253. Quţūr, Gharbia, Egypt
+259. Hyde Park, Massachusetts, United States
+265. Dalap-Uliga-Dorrit, Majuro Atoll, Marshall Islands
+271. Ahmedabad, Gujarat, India
+277. Bugiri, Eastern Region, Uganda
+283. Tiruchirappalli, Tamil Nadu, India
+289. Karratha, Western Australia, Australia
+295. Sfizef, Sidi Bel Abbès, Algeria
+301. Annaba, Algeria
+307. Cuiabá, Mato Grosso, Brazil
+313. Makronia, Madhya Pradesh, India
+319. Moroni, Grande Comore, Comoros
+325. Londuimbali, Huambo, Angola
+331. Veinticinco de Mayo, Buenos Aires, Argentina
+337. Cabinda, Angola
+343. Manukau City, Auckland, New Zealand
+349. Río Tercero, Cordoba, Argentina
+355. Kaliningrad, Kaliningrad Oblast, Russia
+361. Lichinga, Niassa Province, Mozambique
+367. Beijing, China
+373. Shanghai, China
+379. Irvine, California, United States
+385. Degema Hulk, Rivers State, Nigeria
+391. London, England, United Kingdom
+397. Torrelavega, Cantabria, Spain
+403. Wuzhong, Ningxia, China
+409. Odesa, Ukraine
+415. Baião, Pará, Brazil
+421. Irapuato, Guanajuato, Mexico
+427. North Ogden, Utah, United States
+433. Holalkere, Karnataka, India
+439. Dearborn Heights, Michigan, United States
+445. Hargeysa, Woqooyi Galbeed, Somalia
+451. Vadodara, Gujarat, India
+457. Hyderabad, Telangana, India
+463. Coventry, England, United Kingdom
+469. Yangon, Myanmar
+475. Campo Belo, Minas Gerais, Brazil
+481. Unamaucheri, Tamil Nadu, India
+487. Treviso, Veneto, Italy
+493. Newcastle, New South Wales, Australia
+499. Chengdu, Sichuan, China
+505. Khambhāliya, Gujarat, India
+511. Singapore, Singapore
+517. Khartoum North, Khartoum, Sudan

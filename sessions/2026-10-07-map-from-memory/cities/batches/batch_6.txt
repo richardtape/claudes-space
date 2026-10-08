@@ -1,0 +1,87 @@
+6. Alegre, Espírito Santo, Brazil
+12. Omdurman, Khartoum, Sudan
+18. Cambuí, Minas Gerais, Brazil
+24. Suzhou, Jiangsu, China
+30. Longonjo, Huambo, Angola
+36. Ikot Ekpene, Akwa Ibom State, Nigeria
+42. Central Saanich, British Columbia, Canada
+48. León de los Aldama, Guanajuato, Mexico
+54. Puning, Guangdong, China
+60. Hamilton, Ontario, Canada
+66. Naberezhnyye Chelny, Tatarstan Republic, Russia
+72. Sirs al Layyānah, Monufia, Egypt
+78. Bratsk, Irkutsk Oblast, Russia
+84. Kyoto, Japan
+90. Kayonza, Eastern Province, Rwanda
+96. Panama City, Panamá, Panama
+102. Jiayuguan, Gansu, China
+108. Bento Gonçalves, Rio Grande do Sul, Brazil
+114. Ulundi, KwaZulu-Natal, South Africa
+120. Iguape, São Paulo, Brazil
+126. Acará, Pará, Brazil
+132. Seoul, South Korea
+138. Goiânia, Goiás, Brazil
+144. Grafton, New South Wales, Australia
+150. Rosetta, Beheira, Egypt
+156. Gronau, North Rhine-Westphalia, Germany
+162. Wollongong, New South Wales, Australia
+168. San Cristóbal, Táchira, Venezuela
+174. Omsk, Omsk Oblast, Russia
+180. Inokura, Fukuoka, Japan
+186. Nísia Floresta, Rio Grande do Norte, Brazil
+192. Kalgoorlie, Western Australia, Australia
+198. Daxie, Chongqing, China
+204. Townsville, Queensland, Australia
+210. Changchun, Jilin, China
+216. Arequipa, Peru
+222. Noda, Chiba, Japan
+228. Cuíto, Bíe, Angola
+234. Ivanovo, Ivanovo Oblast, Russia
+240. Tangier, Tanger-Tetouan-Al Hoceima, Morocco
+246. La Vega, Dominican Republic
+252. Hobart, Tasmania, Australia
+258. Khai Gala, Azad Kashmir, Pakistan
+264. Tarawa, Gilbert Islands, Kiribati
+270. Port Moresby, National Capital, Papua New Guinea
+276. Owo, Ondo State, Nigeria
+282. Lima, Lima Province, Peru
+288. Sestu, Sardinia, Italy
+294. Capelinha, Minas Gerais, Brazil
+300. Curitiba, Paraná, Brazil
+306. East Brainerd, Tennessee, United States
+312. Brisbane, Queensland, Australia
+318. Sofia, Sofia-Capital, Bulgaria
+324. Tashkent, Uzbekistan
+330. Hoboken, Flanders, Belgium
+336. Hong Kong, Hong Kong
+342. Asunción, Asuncion, Paraguay
+348. Tauranga, Bay of Plenty, New Zealand
+354. Cali, Valle del Cauca Department, Colombia
+360. Batemans Bay, New South Wales, Australia
+366. Brasília, Federal District, Brazil
+372. Caracas, Distrito Federal, Venezuela
+378. Anderson, South Carolina, United States
+384. Sultanbeyli, Istanbul, Turkey
+390. Santa Teresa del Tuy, Miranda, Venezuela
+396. Khasavyurt, Dagestan, Russia
+402. Malingao, Soccsksargen, Philippines
+408. Brooklyn, New York, United States
+414. Ubaíra, Bahia, Brazil
+420. Anshan, Liaoning, China
+426. Mosonmagyaróvár, Győr-Moson-Sopron, Hungary
+432. Ottawa, Ontario, Canada
+438. Maracaibo, Zulia, Venezuela
+444. Shawei, Guangdong, China
+450. Quissecula, Kwanza Sul, Angola
+456. Bamako, Mali
+462. Mexico City, Mexico
+468. Baoding, Hebei, China
+474. Sidi Kacem, Rabat-Salé-Kénitra, Morocco
+480. Henderson, Nevada, United States
+486. Labé, Labé Region, Guinea
+492. Shelbyville, Tennessee, United States
+498. Yangquan, Shanxi, China
+504. Rangiora, Canterbury, New Zealand
+510. Shepparton, Victoria, Australia
+516. Dhaka, Dhaka Division, Bangladesh
+522. Abu Dhabi, United Arab Emirates

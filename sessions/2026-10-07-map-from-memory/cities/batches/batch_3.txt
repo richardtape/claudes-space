@@ -1,0 +1,87 @@
+3. Mayiladuthurai, Tamil Nadu, India
+9. Taounate, Fes-Meknes, Morocco
+15. Buin, Santiago Metropolitan, Chile
+21. Yantai, Shandong, China
+27. Harbin, Heilongjiang, China
+33. Boussé, Plateau-Central, Burkina Faso
+39. Al Qubbah, Darnah, Libya
+45. Ludhiana, Punjab, India
+51. Córdoba, Cordoba, Argentina
+57. Lahore, Punjab, Pakistan
+63. Etāwah, Uttar Pradesh, India
+69. Dayton, Ohio, United States
+75. Ngerengere, Morogoro, Tanzania
+81. Stavropol, Stavropol Kray, Russia
+87. Honolulu, Hawaii, United States
+93. Buea, South-West, Cameroon
+99. N'Djamena, N’Djaména, Chad
+105. Pacatuba, Ceará, Brazil
+111. Belo Horizonte, Minas Gerais, Brazil
+117. Vienna, Austria
+123. Pudong, Shanghai, China
+129. Gilching, Bavaria, Germany
+135. Fukuoka, Japan
+141. Thornton, Colorado, United States
+147. Alice Springs, Northern Territory, Australia
+153. Songjiang, Shanghai, China
+159. Kano, Kano State, Nigeria
+165. Nasinu, Central, Fiji
+171. Aporá, Bahia, Brazil
+177. The Bronx, New York, United States
+183. Tijuana, Baja California, Mexico
+189. Central Coast, New South Wales, Australia
+195. Trujillo, La Libertad, Peru
+201. Praia Grande, São Paulo, Brazil
+207. Aurangābād, Bihar, India
+213. Maubara, Liquiçá, Timor Leste
+219. Tianshui, Gansu, China
+225. Philadelphia, Pennsylvania, United States
+231. Dongguan, Guangdong, China
+237. Tuggeranong, Australian Capital Territory, Australia
+243. Saint-Lin-Laurentides, Quebec, Canada
+249. Arraiján, Panamá Oeste Province, Panama
+255. Barquisimeto, Lara, Venezuela
+261. Ciudad Guayana, Bolívar, Venezuela
+267. Phoenix, Arizona, United States
+273. Rānipet, Tamil Nadu, India
+279. Rio de Janeiro, Brazil
+285. Moscow, Russia
+291. Gravataí, Rio Grande do Sul, Brazil
+297. Jixi, Heilongjiang, China
+303. Santiago de Querétaro, Querétaro, Mexico
+309. Maryborough, Queensland, Australia
+315. Malango, Guadalcanal Province, Solomon Islands
+321. Kiselëvsk, Kuzbass, Russia
+327. Gold Coast, Queensland, Australia
+333. Chongqing, China
+339. Santiago de Cuba, Santiago de Cuba Province, Cuba
+345. Azcapotzalco, Mexico City, Mexico
+351. Dosso, Dosso Region, Niger
+357. Godomè, Atlantique, Benin
+363. Escalante, Western Visayas, Philippines
+369. Khanty-Mansiysk, Khanty-Mansia, Russia
+375. Konya, Turkey
+381. Yaoundé, Centre, Cameroon
+387. Timimoun, Algeria
+393. Aguascalientes, Mexico
+399. Valencia, Carabobo, Venezuela
+405. Canberra, Australian Capital Territory, Australia
+411. Cairo, Egypt
+417. Saint Petersburg, St.-Petersburg, Russia
+423. Stockholm, Sweden
+429. Concord, California, United States
+435. Tokyo, Japan
+441. Hangzhou, Zhejiang, China
+447. Longling County, Yunnan, China
+453. Palmerston, Northern Territory, Australia
+459. Volta Redonda, Rio de Janeiro, Brazil
+465. Long Xuyên, An Giang, Vietnam
+471. Kunming, Yunnan, China
+477. Rome, Lazio, Italy
+483. Guadalupe, San José, Costa Rica
+489. Lanham-Seabrook, Maryland, United States
+495. Cañuelas, Buenos Aires, Argentina
+501. Santiago de los Caballeros, Santiago Province, Dominican Republic
+507. Gostivar, North Macedonia
+513. San Rafael, California, United States
+519. Lexington, Kentucky, United States

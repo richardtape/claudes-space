@@ -1,0 +1,82 @@
+{
+ "all": {
+  "n": 300,
+  "grades": {
+   "nearest": 0.67,
+   "top 3": 0.137,
+   "close": 0.13,
+   "wrong": 0.063
+  },
+  "median_nearest_km": 19.0,
+  "median_excess_km": 0.0,
+  "p90_excess_km": 6.8,
+  "share_resolved": 0.967,
+  "median_distance_ratio_est_over_actual": 0.998,
+  "share_distance_within_25pct": 0.962,
+  "mean_p_nearest": 0.567
+ },
+ "offset": {
+  "n": 200,
+  "grades": {
+   "nearest": 0.675,
+   "top 3": 0.135,
+   "close": 0.135,
+   "wrong": 0.055
+  },
+  "median_nearest_km": 14.9,
+  "median_excess_km": 0.0,
+  "p90_excess_km": 4.2,
+  "share_resolved": 0.97,
+  "median_distance_ratio_est_over_actual": 0.997,
+  "share_distance_within_25pct": 0.964,
+  "mean_p_nearest": 0.56
+ },
+ "random": {
+  "n": 100,
+  "grades": {
+   "nearest": 0.66,
+   "top 3": 0.14,
+   "close": 0.12,
+   "wrong": 0.08
+  },
+  "median_nearest_km": 56.7,
+  "median_excess_km": 0.0,
+  "p90_excess_km": 18.0,
+  "share_resolved": 0.96,
+  "median_distance_ratio_est_over_actual": 0.999,
+  "share_distance_within_25pct": 0.958,
+  "mean_p_nearest": 0.581
+ },
+ "calibration": [
+  {
+   "bin": "0-30",
+   "n": 10,
+   "mean_p": 0.24,
+   "hit_rate": 0.2
+  },
+  {
+   "bin": "30-50",
+   "n": 113,
+   "mean_p": 0.379,
+   "hit_rate": 0.434
+  },
+  {
+   "bin": "50-70",
+   "n": 68,
+   "mean_p": 0.555,
+   "hit_rate": 0.809
+  },
+  {
+   "bin": "70-90",
+   "n": 95,
+   "mean_p": 0.78,
+   "hit_rate": 0.863
+  },
+  {
+   "bin": "90-100",
+   "n": 14,
+   "mean_p": 0.922,
+   "hit_rate": 0.929
+  }
+ ]
+}

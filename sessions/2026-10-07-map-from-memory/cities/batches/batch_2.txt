@@ -1,0 +1,87 @@
+2. Callao, Peru
+8. Abobo, Abidjan Autonomous District, Ivory Coast
+14. Aktobe, Kazakhstan
+20. Pointe-Noire, Republic of the Congo
+26. Belém, Pará, Brazil
+32. Horsham, Victoria, Australia
+38. Busselton, Western Australia, Australia
+44. Wellington, Wellington Region, New Zealand
+50. Njala, Southern Province, Sierra Leone
+56. Melbourne, Victoria, Australia
+62. Shaoxing, Zhejiang, China
+68. Terre Haute, Indiana, United States
+74. Chamartín, Madrid, Spain
+80. Balarāmpur, West Bengal, India
+86. Sang-e Chārak, Sar-e Pol Province, Afghanistan
+92. Perth, Western Australia, Australia
+98. Madrid, Spain
+104. Yangjiang, Guangdong, China
+110. Xingyi, Guizhou, China
+116. Rayevskiy, Bashkortostan Republic, Russia
+122. Yeosu, Jeollanam-do, South Korea
+128. Obalende, Lagos, Nigeria
+134. Alexandria, Egypt
+140. Taiyuan, Shanxi, China
+146. Yoff, Dakar, Senegal
+152. Yerevan, Armenia
+158. Oaxaca, Mexico
+164. Bangkok, Thailand
+170. Montréal, Quebec, Canada
+176. Babamba, Tshopo, Democratic Republic of the Congo
+182. Wadgassen, Saarland, Germany
+188. Xi’an, Shaanxi, China
+194. Mlolongo, Machakos County, Kenya
+200. Papatoetoe, Auckland, New Zealand
+206. Hà Giang, Tuyen Quang, Vietnam
+212. Rāmpura, Punjab, India
+218. Christchurch, Canterbury, New Zealand
+224. Yekaterinburg, Sverdlovsk Oblast, Russia
+230. Sīwah, Matruh, Egypt
+236. Bafoussam, West, Cameroon
+242. Munich, Bavaria, Germany
+248. Shangqiu, Henan, China
+254. Zhu Cheng City, Shandong, China
+260. Riyadh, Riyadh Region, Saudi Arabia
+266. Lodi, California, United States
+272. Southend-on-Sea, England, United Kingdom
+278. Dindigul, Tamil Nadu, India
+284. Nadvirna, Ivano-Frankivsk, Ukraine
+290. Tejar, San José, Costa Rica
+296. As Suwayq, Al Batinah North, Oman
+302. Adelaide, South Australia, Australia
+308. Maiduguri, Borno State, Nigeria
+314. Huancayo, Junin, Peru
+320. Qingdao, Shandong, China
+326. Toowoomba, Queensland, Australia
+332. Watsonville, California, United States
+338. Bunbury, Western Australia, Australia
+344. Exmouth, England, United Kingdom
+350. Manhattan, New York, United States
+356. Suez, Egypt
+362. Reno, Nevada, United States
+368. Mysłowice, Silesia, Poland
+374. Quetta, Balochistan, Pakistan
+380. São Luís, Maranhão, Brazil
+386. Thái Nguyên, Thai Nguyen, Vietnam
+392. Luena, Moxico, Angola
+398. New York City, New York, United States
+404. New Plymouth, Taranaki Region, New Zealand
+410. Ōno, Iwate, Japan
+416. Fuenlabrada, Madrid, Spain
+422. Campinas, São Paulo, Brazil
+428. Lakewood, New Jersey, United States
+434. Dumyāţ al Jadīdah, Damietta, Egypt
+440. Jesus Maria, Lima region, Peru
+446. Ostrów Wielkopolski, Greater Poland, Poland
+452. Sunshine Coast, Queensland, Australia
+458. Voorburg, South Holland, The Netherlands
+464. Pinamar, Buenos Aires, Argentina
+470. Invercargill, Southland, New Zealand
+476. Sint-Andries, Flanders, Belgium
+482. Lviv, Ukraine
+488. Nanning, Guangxi, China
+494. Houston, Texas, United States
+500. Kinshasa, Democratic Republic of the Congo
+506. Sharjah, United Arab Emirates
+512. Edmonton, Alberta, Canada
+518. Changle, Shandong, China

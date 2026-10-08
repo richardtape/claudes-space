@@ -1,0 +1,219 @@
+{
+ "all": {
+  "n": 522,
+  "grades": {
+   "right": 0.935,
+   "same spot": 0.019,
+   "neighbour": 0.033,
+   "wrong": 0.013
+  },
+  "name_right": 0.935,
+  "right_or_same_spot": 0.954,
+  "country_right": 0.998,
+  "mean_p_correct": 0.714,
+  "unresolved_wrong": 0.011
+ },
+ "by_tier": {
+  "T1": {
+   "n": 68,
+   "grades": {
+    "right": 0.985,
+    "same spot": 0.015,
+    "neighbour": 0.0,
+    "wrong": 0.0
+   },
+   "name_right": 0.985,
+   "right_or_same_spot": 1.0,
+   "country_right": 1.0,
+   "mean_p_correct": 0.826,
+   "unresolved_wrong": 0.0
+  },
+  "T2": {
+   "n": 114,
+   "grades": {
+    "right": 0.965,
+    "same spot": 0.009,
+    "neighbour": 0.018,
+    "wrong": 0.009
+   },
+   "name_right": 0.965,
+   "right_or_same_spot": 0.974,
+   "country_right": 1.0,
+   "mean_p_correct": 0.79,
+   "unresolved_wrong": 0.009
+  },
+  "T3": {
+   "n": 114,
+   "grades": {
+    "right": 0.974,
+    "same spot": 0.009,
+    "neighbour": 0.018,
+    "wrong": 0.0
+   },
+   "name_right": 0.974,
+   "right_or_same_spot": 0.982,
+   "country_right": 1.0,
+   "mean_p_correct": 0.759,
+   "unresolved_wrong": 0.0
+  },
+  "T4": {
+   "n": 113,
+   "grades": {
+    "right": 0.929,
+    "same spot": 0.018,
+    "neighbour": 0.027,
+    "wrong": 0.027
+   },
+   "name_right": 0.929,
+   "right_or_same_spot": 0.947,
+   "country_right": 0.991,
+   "mean_p_correct": 0.673,
+   "unresolved_wrong": 0.027
+  },
+  "T5": {
+   "n": 113,
+   "grades": {
+    "right": 0.841,
+    "same spot": 0.044,
+    "neighbour": 0.088,
+    "wrong": 0.027
+   },
+   "name_right": 0.841,
+   "right_or_same_spot": 0.885,
+   "country_right": 1.0,
+   "mean_p_correct": 0.565,
+   "unresolved_wrong": 0.018
+  }
+ },
+ "by_continent": {
+  "AF": {
+   "n": 86,
+   "grades": {
+    "right": 0.884,
+    "same spot": 0.035,
+    "neighbour": 0.047,
+    "wrong": 0.035
+   },
+   "name_right": 0.884,
+   "right_or_same_spot": 0.919,
+   "country_right": 1.0,
+   "mean_p_correct": 0.647,
+   "unresolved_wrong": 0.035
+  },
+  "AS": {
+   "n": 144,
+   "grades": {
+    "right": 0.882,
+    "same spot": 0.042,
+    "neighbour": 0.056,
+    "wrong": 0.021
+   },
+   "name_right": 0.882,
+   "right_or_same_spot": 0.924,
+   "country_right": 0.993,
+   "mean_p_correct": 0.69,
+   "unresolved_wrong": 0.014
+  },
+  "EU": {
+   "n": 78,
+   "grades": {
+    "right": 1.0,
+    "same spot": 0.0,
+    "neighbour": 0.0,
+    "wrong": 0.0
+   },
+   "name_right": 1.0,
+   "right_or_same_spot": 1.0,
+   "country_right": 1.0,
+   "mean_p_correct": 0.782,
+   "unresolved_wrong": 0.0
+  },
+  "NA": {
+   "n": 78,
+   "grades": {
+    "right": 0.949,
+    "same spot": 0.0,
+    "neighbour": 0.038,
+    "wrong": 0.013
+   },
+   "name_right": 0.949,
+   "right_or_same_spot": 0.949,
+   "country_right": 1.0,
+   "mean_p_correct": 0.724,
+   "unresolved_wrong": 0.013
+  },
+  "SA": {
+   "n": 79,
+   "grades": {
+    "right": 1.0,
+    "same spot": 0.0,
+    "neighbour": 0.0,
+    "wrong": 0.0
+   },
+   "name_right": 1.0,
+   "right_or_same_spot": 1.0,
+   "country_right": 1.0,
+   "mean_p_correct": 0.72,
+   "unresolved_wrong": 0.0
+  },
+  "OC": {
+   "n": 57,
+   "grades": {
+    "right": 0.947,
+    "same spot": 0.018,
+    "neighbour": 0.035,
+    "wrong": 0.0
+   },
+   "name_right": 0.947,
+   "right_or_same_spot": 0.965,
+   "country_right": 1.0,
+   "mean_p_correct": 0.761,
+   "unresolved_wrong": 0.0
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0-10",
+   "n": 1,
+   "mean_p": 0.08,
+   "hit_rate": 0.0
+  },
+  {
+   "bin": "10-30",
+   "n": 25,
+   "mean_p": 0.188,
+   "hit_rate": 0.28
+  },
+  {
+   "bin": "30-50",
+   "n": 49,
+   "mean_p": 0.394,
+   "hit_rate": 0.898
+  },
+  {
+   "bin": "50-70",
+   "n": 90,
+   "mean_p": 0.584,
+   "hit_rate": 0.933
+  },
+  {
+   "bin": "70-90",
+   "n": 279,
+   "mean_p": 0.808,
+   "hit_rate": 0.986
+  },
+  {
+   "bin": "90-100",
+   "n": 78,
+   "mean_p": 0.906,
+   "hit_rate": 1.0
+  }
+ ],
+ "brier": 0.0994,
+ "paired": {
+  "forward_within_5km": 492,
+  "forward_within_5km_and_reverse_right": 475,
+  "forward_within_5km_but_reverse_wrong": 17,
+  "forward_wrong_but_reverse_right": 13
+ }
+}
